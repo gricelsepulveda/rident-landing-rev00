@@ -1,0 +1,1114 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,500,500i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+//COLORS
+$white: #ffffff;
+$black: #7D7979;
+$color-1: #81BBE0;
+$color-2: #2F73B8;
+$color-3: #F26D33;
+$color-4: #F5B432;
+$color-5: #8BBD26;
+$color-6: #37A8D2;
+
+
+//BREAKPOINTS
+$xs: "(max-width: 480px)";
+$sm: "(max-width: 768px)";
+$md: "(max-width: 991px)";
+$lg: "(max-width: 1199px)";
+$xl: "(min-width: 1200px)";
+$xxl: "(min-width: 1600px)";
+
+//AUX
+@mixin rdnt-cero {
+  padding: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@mixin rdnt-cero-soft {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin rdnt-animate {
+  transition: all 0.25s ease-in-out;
+}
+
+@mixin rdnt-shadow {
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+@mixin rdnt-dark-shadow {
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+@mixin rdnt-dark-text {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+@mixin rdnt-clean-ahref {
+  color: inherit;
+  text-decoration: none!important;
+  outline: none;
+  border: 0;
+  @include rdnt-cero;
+  &:hover, &:active, &:visited, &:focus {
+    text-decoration: none!important;
+    color: inherit;
+    outline: none;
+    border: 0;
+    @include rdnt-cero;
+  }
+}
+
+@mixin rdnt-clean-webkit {
+  -webkit-margin-before: 0!important;
+  -webkit-margin-after: 0!important;
+  -webkit-margin-start: 0!important;
+  -webkit-margin-end: 0!important;
+  -webkit-padding-before: 0!important;
+  -webkit-padding-after: 0!important;
+  -webkit-padding-start: 0!important;
+  -webkit-padding-end: 0!important;
+}
+
+@mixin rdnt-clean-list {
+  list-style: none;
+  list-style-image: none;
+  list-indent: 0;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+@mixin rdnt-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+@mixin rdnt-flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.display-none {
+  display: none!important;
+}
+
+.display-flex {
+  display: flex!important;
+}
+
+a {
+  outline: 0;
+  border: 0;
+  box-shadow: 0;
+  text-decoration: none;
+  &:focus, &:active, &:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: 0;
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  @include rdnt-cero;
+}
+
+//ANCHOS PORCENTUALES
+.width-2-5 { width: 2.5%; max-width: 2.5%; min-width: 2.5%; }
+.width-5 { width: 5%; max-width: 5%; min-width: 5%; }
+.width-7-5 { width: 7.5%; max-width: 7.5%; min-width: 7.5%; }
+.width-10 { width: 10%; max-width: 10%; min-width: 10%; }
+.width-12-5 { width: 12.5%; max-width: 12.5%; min-width: 12.5%; }
+.width-15 { width: 15%; max-width: 15%; min-width: 15%; }
+.width-17-5 { width: 17.5%; max-width: 17.5%; min-width: 17.5%; }
+.width-20 { width: 20%; max-width: 20%; min-width: 20%; }
+.width-22-5 { width: 22.5%; max-width: 22.5%; min-width: 22.5%; }
+.width-25 { width: 25%; max-width: 25%; min-width: 25%; }
+.width-27-5 { width: 27.5%; max-width: 27.5%; min-width: 27.5%; }
+.width-30 { width: 30%; max-width: 30%; min-width: 30%; }
+.width-32-5 { width: 32.5%; max-width: 32.5%; min-width: 32.5%; }
+.width-35 { width: 35%; max-width: 35%; min-width: 35%; }
+.width-37-5 { width: 37.5%; max-width: 37.5%; min-width: 37.5%; }
+.width-40 { width: 40%; max-width: 40%; min-width: 40%; }
+.width-42-5 { width: 42.5%; max-width: 42.5%; min-width: 42.5%; }
+.width-45 { width: 45%; max-width: 45%; min-width: 45%; }
+.width-47-5 { width: 47.5%; max-width: 47.5%; min-width: 47.5%; }
+.width-50 { width: 50%; max-width: 50%; min-width: 50%; }
+.width-52-5 { width: 52.5%; max-width: 52.5%; min-width: 52.5%; }
+.width-55 { width: 55%; max-width: 55%; min-width: 55%; }
+.width-57-5 { width: 57.5%; max-width: 57.5%; min-width: 57.5%; }
+.width-60 { width: 60%; max-width: 60%; min-width: 60%; }
+.width-62-5 { width: 62.5%; max-width: 62.5%; min-width: 62.5%; }
+.width-65 { width: 65%; max-width: 65%; min-width: 65%; }
+.width-67-5 { width: 67.5%; max-width: 67.5%; min-width: 67.5%; }
+.width-70 { width: 70%; max-width: 70%; min-width: 70%; }
+.width-72-5 { width: 72.5%; max-width: 72.5%; min-width: 72.5%; }
+.width-75 { width: 75%; max-width: 75%; min-width: 75%; }
+.width-77-5 { width: 77.5%; max-width: 77.5%; min-width: 77.5%; }
+.width-80 { width: 80%; max-width: 80%; min-width: 80%; }
+.width-82-5 { width: 82.5%; max-width: 82.5%; min-width: 82.5%; }
+.width-85 { width: 85%; max-width: 85%; min-width: 85%; }
+.width-87-5 { width: 87.5%; max-width: 87.5%; min-width: 87.5%; }
+.width-90 { width: 90%; max-width: 90%; min-width: 90%; }
+.width-92-5 { width: 92.5%; max-width: 92.5%; min-width: 92.5%; }
+.width-95 { width: 95%; max-width: 95%; min-width: 95%; }
+.width-97-5 { width: 97.5%; max-width: 97.5%; min-width: 97.5%; }
+.width-100 { width: 100%;}
+
+//ANCHOS PIXELES
+.width-5p { width: 5px; max-width: 5px; min-width: 5px; }
+.width-10p { width: 10px; max-width: 10px; min-width: 10px; }
+.width-15p { width: 15px; max-width: 15px; min-width: 15px; }
+.width-20p { width: 20px; max-width: 20px; min-width: 20px; }
+.width-25p { width: 25px; max-width: 25px; min-width: 25px; }
+.width-30p { width: 30px; max-width: 30px; min-width: 30px; }
+.width-35p { width: 35px; max-width: 35px; min-width: 35px; }
+.width-40p { width: 40px; max-width: 40px; min-width: 40px; }
+.width-45p { width: 45px; max-width: 45px; min-width: 45px; }
+.width-50p { width: 50px; max-width: 50px; min-width: 50px; }
+.width-55p { width: 55px; max-width: 55px; min-width: 55px; }
+.width-60p { width: 60px; max-width: 60px; min-width: 60px; }
+.width-65p { width: 65px; max-width: 65px; min-width: 65px; }
+.width-70p { width: 70px; max-width: 70px; min-width: 70px; }
+.width-75p { width: 75px; max-width: 75px; min-width: 75px; }
+.width-80p { width: 80px; max-width: 80px; min-width: 80px; }
+.width-85p { width: 85px; max-width: 85px; min-width: 85px; }
+.width-90p { width: 90px; max-width: 90px; min-width: 90px; }
+.width-95p { width: 95px; max-width: 95px; min-width: 95px; }
+.width-100p { width: 100px; max-width: 100px; min-width: 100px;}
+.width-100p { width: 105px; max-width: 105px; min-width: 105px;}
+.width-110p { width: 110px; max-width: 110px; min-width: 110px;}
+.width-115p { width: 115px; max-width: 115px; min-width: 115px;}
+.width-120p { width: 120px; max-width: 120px; min-width: 120px;}
+.width-125p { width: 125px; max-width: 125px; min-width: 125px;}
+.width-130p { width: 130px; max-width: 130px; min-width: 130px;}
+.width-135p { width: 135px; max-width: 135px; min-width: 135px;}
+.width-140p { width: 140px; max-width: 140px; min-width: 140px;}
+.width-145p { width: 145px; max-width: 145px; min-width: 145px;}
+.width-150p { width: 150px; max-width: 150px; min-width: 150px;}
+.width-155p { width: 155px; max-width: 155px; min-width: 155px;}
+.width-160p { width: 160px; max-width: 160px; min-width: 160px;}
+.width-165p { width: 165px; max-width: 165px; min-width: 165px;}
+.width-170p { width: 170px; max-width: 170px; min-width: 170px;}
+.width-175p { width: 175px; max-width: 175px; min-width: 175px;}
+.width-180p { width: 180px; max-width: 180px; min-width: 180px;}
+.width-185p { width: 185px; max-width: 185px; min-width: 185px;}
+.width-190p { width: 190px; max-width: 190px; min-width: 190px;}
+.width-195p { width: 195px; max-width: 195px; min-width: 195px;}
+.width-200p { width: 200px; max-width: 200px; min-width: 200px;}
+.width-205p { width: 205px; max-width: 205px; min-width: 205px;}
+.width-210p { width: 210px; max-width: 210px; min-width: 210px;}
+.width-215p { width: 215px; max-width: 215px; min-width: 215px;}
+.width-220p { width: 220px; max-width: 220px; min-width: 220px;}
+.width-225p { width: 225px; max-width: 225px; min-width: 225px;}
+.width-230p { width: 230px; max-width: 230px; min-width: 230px;}
+.width-235p { width: 235px; max-width: 235px; min-width: 235px;}
+.width-240p { width: 240px; max-width: 240px; min-width: 240px;}
+.width-245p { width: 245px; max-width: 245px; min-width: 245px;}
+.width-250p { width: 250px; max-width: 250px; min-width: 250px;}
+.width-255p { width: 255px; max-width: 255px; min-width: 255px;}
+.width-260p { width: 260px; max-width: 260px; min-width: 260px;}
+.width-265p { width: 265px; max-width: 265px; min-width: 265px;}
+.width-270p { width: 270px; max-width: 270px; min-width: 270px;}
+.width-275p { width: 275px; max-width: 275px; min-width: 275px;}
+.width-280p { width: 280px; max-width: 280px; min-width: 280px;}
+.width-285p { width: 285px; max-width: 285px; min-width: 285px;}
+.width-290p { width: 290px; max-width: 290px; min-width: 290px;}
+.width-295p { width: 295px; max-width: 295px; min-width: 295px;}
+.width-300p { width: 300px; max-width: 300px; min-width: 300px;}
+.width-305p { width: 305px; max-width: 305px; min-width: 305px;}
+.width-310p { width: 310px; max-width: 310px; min-width: 310px;}
+.width-315p { width: 315px; max-width: 315px; min-width: 315px;}
+.width-320p { width: 320px; max-width: 320px; min-width: 320px;}
+.width-325p { width: 325px; max-width: 325px; min-width: 325px;}
+.width-330p { width: 330px; max-width: 330px; min-width: 330px;}
+.width-335p { width: 335px; max-width: 335px; min-width: 335px;}
+.width-340p { width: 340px; max-width: 340px; min-width: 340px;}
+.width-345p { width: 345px; max-width: 345px; min-width: 345px;}
+.width-350p { width: 350px; max-width: 350px; min-width: 350px;}
+.width-355p { width: 355px; max-width: 355px; min-width: 355px;}
+.width-360p { width: 360px; max-width: 360px; min-width: 360px;}
+.width-365p { width: 365px; max-width: 365px; min-width: 365px;}
+.width-370p { width: 370px; max-width: 370px; min-width: 370px;}
+.width-375p { width: 375px; max-width: 375px; min-width: 375px;}
+.width-380p { width: 380px; max-width: 380px; min-width: 380px;}
+.width-385p { width: 385px; max-width: 385px; min-width: 385px;}
+.width-390p { width: 390px; max-width: 390px; min-width: 390px;}
+.width-395p { width: 395px; max-width: 395px; min-width: 395px;}
+.width-400p { width: 400px; max-width: 400px; min-width: 400px;}
+.width-405p { width: 405px; max-width: 405px; min-width: 405px;}
+.width-410p { width: 410px; max-width: 410px; min-width: 410px;}
+.width-415p { width: 415px; max-width: 415px; min-width: 415px;}
+.width-420p { width: 420px; max-width: 420px; min-width: 420px;}
+.width-425p { width: 425px; max-width: 425px; min-width: 425px;}
+.width-430p { width: 430px; max-width: 430px; min-width: 430px;}
+.width-435p { width: 435px; max-width: 435px; min-width: 435px;}
+.width-440p { width: 440px; max-width: 440px; min-width: 440px;}
+.width-445p { width: 445px; max-width: 445px; min-width: 445px;}
+.width-450p { width: 450px; max-width: 450px; min-width: 450px;}
+.width-455p { width: 455px; max-width: 455px; min-width: 455px;}
+.width-460p { width: 460px; max-width: 460px; min-width: 460px;}
+.width-465p { width: 465px; max-width: 465px; min-width: 465px;}
+.width-470p { width: 470px; max-width: 470px; min-width: 470px;}
+.width-475p { width: 475px; max-width: 475px; min-width: 475px;}
+.width-480p { width: 480px; max-width: 480px; min-width: 480px;}
+.width-485p { width: 485px; max-width: 485px; min-width: 485px;}
+.width-490p { width: 490px; max-width: 490px; min-width: 490px;}
+.width-495p { width: 495px; max-width: 495px; min-width: 495px;}
+.width-500p { width: 500px; max-width: 500px; min-width: 500px;}
+.width-505p { width: 505px; max-width: 505px; min-width: 505px;}
+.width-510p { width: 510px; max-width: 510px; min-width: 510px;}
+.width-515p { width: 515px; max-width: 515px; min-width: 515px;}
+.width-520p { width: 520px; max-width: 520px; min-width: 520px;}
+.width-525p { width: 525px; max-width: 525px; min-width: 525px;}
+.width-530p { width: 530px; max-width: 530px; min-width: 530px;}
+.width-535p { width: 535px; max-width: 535px; min-width: 535px;}
+.width-540p { width: 540px; max-width: 540px; min-width: 540px;}
+.width-545p { width: 545px; max-width: 545px; min-width: 545px;}
+.width-550p { width: 550px; max-width: 550px; min-width: 550px;}
+.width-555p { width: 555px; max-width: 555px; min-width: 555px;}
+.width-560p { width: 560px; max-width: 560px; min-width: 560px;}
+.width-565p { width: 565px; max-width: 565px; min-width: 565px;}
+.width-570p { width: 570px; max-width: 570px; min-width: 570px;}
+.width-575p { width: 575px; max-width: 575px; min-width: 575px;}
+.width-580p { width: 580px; max-width: 580px; min-width: 580px;}
+.width-585p { width: 585px; max-width: 585px; min-width: 585px;}
+.width-590p { width: 590px; max-width: 590px; min-width: 590px;}
+.width-595p { width: 595px; max-width: 595px; min-width: 595px;}
+.width-600p { width: 600px; max-width: 600px; min-width: 600px;}
+.width-605p { width: 605px; max-width: 605px; min-width: 605px;}
+.width-610p { width: 610px; max-width: 610px; min-width: 610px;}
+.width-615p { width: 615px; max-width: 615px; min-width: 615px;}
+.width-620p { width: 620px; max-width: 620px; min-width: 620px;}
+.width-625p { width: 625px; max-width: 625px; min-width: 625px;}
+.width-630p { width: 630px; max-width: 630px; min-width: 630px;}
+.width-635p { width: 635px; max-width: 635px; min-width: 635px;}
+.width-640p { width: 640px; max-width: 640px; min-width: 640px;}
+.width-645p { width: 645px; max-width: 645px; min-width: 645px;}
+.width-650p { width: 650px; max-width: 650px; min-width: 650px;}
+.width-655p { width: 655px; max-width: 655px; min-width: 655px;}
+.width-660p { width: 660px; max-width: 660px; min-width: 660px;}
+.width-665p { width: 665px; max-width: 665px; min-width: 665px;}
+.width-670p { width: 670px; max-width: 670px; min-width: 670px;}
+.width-675p { width: 675px; max-width: 675px; min-width: 675px;}
+.width-680p { width: 680px; max-width: 680px; min-width: 680px;}
+.width-685p { width: 685px; max-width: 685px; min-width: 685px;}
+.width-690p { width: 690px; max-width: 690px; min-width: 690px;}
+.width-695p { width: 695px; max-width: 695px; min-width: 695px;}
+.width-700p { width: 700px; max-width: 700px; min-width: 700px;}
+.width-705p { width: 705px; max-width: 705px; min-width: 705px;}
+.width-710p { width: 710px; max-width: 710px; min-width: 710px;}
+.width-715p { width: 715px; max-width: 715px; min-width: 715px;}
+.width-720p { width: 720px; max-width: 720px; min-width: 720px;}
+.width-725p { width: 725px; max-width: 725px; min-width: 725px;}
+.width-730p { width: 730px; max-width: 730px; min-width: 730px;}
+.width-735p { width: 735px; max-width: 735px; min-width: 735px;}
+.width-740p { width: 740px; max-width: 740px; min-width: 740px;}
+.width-745p { width: 745px; max-width: 745px; min-width: 745px;}
+.width-750p { width: 750px; max-width: 750px; min-width: 750px;}
+.width-755p { width: 755px; max-width: 755px; min-width: 755px;}
+.width-760p { width: 760px; max-width: 760px; min-width: 760px;}
+.width-765p { width: 765px; max-width: 765px; min-width: 765px;}
+.width-770p { width: 770px; max-width: 770px; min-width: 770px;}
+.width-775p { width: 775px; max-width: 775px; min-width: 775px;}
+.width-780p { width: 780px; max-width: 780px; min-width: 780px;}
+.width-785p { width: 785px; max-width: 785px; min-width: 785px;}
+.width-790p { width: 790px; max-width: 790px; min-width: 790px;}
+.width-795p { width: 795px; max-width: 795px; min-width: 795px;}
+.width-800p { width: 800px; max-width: 800px; min-width: 800px;}
+.width-805p { width: 805px; max-width: 805px; min-width: 805px;}
+.width-810p { width: 810px; max-width: 810px; min-width: 810px;}
+.width-815p { width: 815px; max-width: 815px; min-width: 815px;}
+.width-820p { width: 820px; max-width: 820px; min-width: 820px;}
+.width-825p { width: 825px; max-width: 825px; min-width: 825px;}
+.width-830p { width: 830px; max-width: 830px; min-width: 830px;}
+.width-835p { width: 835px; max-width: 835px; min-width: 835px;}
+.width-840p { width: 840px; max-width: 840px; min-width: 840px;}
+.width-845p { width: 845px; max-width: 845px; min-width: 845px;}
+.width-850p { width: 850px; max-width: 850px; min-width: 850px;}
+.width-855p { width: 855px; max-width: 855px; min-width: 855px;}
+.width-860p { width: 860px; max-width: 860px; min-width: 860px;}
+.width-865p { width: 865px; max-width: 865px; min-width: 865px;}
+.width-870p { width: 870px; max-width: 870px; min-width: 870px;}
+.width-875p { width: 875px; max-width: 875px; min-width: 875px;}
+.width-880p { width: 880px; max-width: 880px; min-width: 880px;}
+.width-885p { width: 885px; max-width: 885px; min-width: 885px;}
+.width-890p { width: 890px; max-width: 890px; min-width: 890px;}
+.width-895p { width: 895px; max-width: 895px; min-width: 895px;}
+.width-900p { width: 900px; max-width: 900px; min-width: 900px;}
+.width-905p { width: 905px; max-width: 905px; min-width: 905px;}
+.width-910p { width: 910px; max-width: 910px; min-width: 910px;}
+.width-915p { width: 915px; max-width: 915px; min-width: 915px;}
+.width-920p { width: 920px; max-width: 920px; min-width: 920px;}
+.width-925p { width: 925px; max-width: 925px; min-width: 925px;}
+.width-930p { width: 930px; max-width: 930px; min-width: 930px;}
+.width-935p { width: 935px; max-width: 935px; min-width: 935px;}
+.width-940p { width: 940px; max-width: 940px; min-width: 940px;}
+.width-945p { width: 945px; max-width: 945px; min-width: 945px;}
+.width-950p { width: 950px; max-width: 950px; min-width: 950px;}
+.width-955p { width: 955px; max-width: 955px; min-width: 955px;}
+.width-960p { width: 960px; max-width: 960px; min-width: 960px;}
+.width-965p { width: 965px; max-width: 965px; min-width: 965px;}
+.width-970p { width: 970px; max-width: 970px; min-width: 970px;}
+.width-975p { width: 975px; max-width: 975px; min-width: 975px;}
+.width-980p { width: 980px; max-width: 980px; min-width: 980px;}
+.width-985p { width: 985px; max-width: 985px; min-width: 985px;}
+.width-990p { width: 990px; max-width: 990px; min-width: 990px;}
+.width-995p { width: 995px; max-width: 995px; min-width: 995px;}
+.width-1000p { width: 1000px; max-width: 1000px; min-width: 1000px;}
+.width-1005p { width: 1005px; max-width: 1005px; min-width: 1005px; }
+.width-1010p { width: 1010px; max-width: 1010px; min-width: 1010px; }
+.width-1015p { width: 1015px; max-width: 1015px; min-width: 1015px; }
+.width-1020p { width: 1020px; max-width: 1020px; min-width: 1020px; }
+.width-1025p { width: 1025px; max-width: 1025px; min-width: 1025px; }
+.width-1030p { width: 1030px; max-width: 1030px; min-width: 1030px; }
+.width-1035p { width: 1035px; max-width: 1035px; min-width: 1035px; }
+.width-1040p { width: 1040px; max-width: 1040px; min-width: 1040px; }
+.width-1045p { width: 1045px; max-width: 1045px; min-width: 1045px; }
+.width-1050p { width: 1050px; max-width: 1050px; min-width: 1050px; }
+.width-1055p { width: 1055px; max-width: 1055px; min-width: 1055px; }
+.width-1060p { width: 1060px; max-width: 1060px; min-width: 1060px; }
+.width-1065p { width: 1065px; max-width: 1065px; min-width: 1065px; }
+.width-1070p { width: 1070px; max-width: 1070px; min-width: 1070px; }
+.width-1075p { width: 1075px; max-width: 1075px; min-width: 1075px; }
+.width-1080p { width: 1080px; max-width: 1080px; min-width: 1080px; }
+.width-1085p { width: 1085px; max-width: 1085px; min-width: 1085px; }
+.width-1090p { width: 1090px; max-width: 1090px; min-width: 1090px; }
+.width-1095p { width: 1095px; max-width: 1095px; min-width: 1095px; }
+.width-1100p { width: 1100px; max-width: 1100px; min-width: 1100px;}
+.width-1105p { width: 1105px; max-width: 1105px; min-width: 1105px;}
+.width-1110p { width: 1110px; max-width: 1110px; min-width: 1110px;}
+.width-1115p { width: 1115px; max-width: 1115px; min-width: 1115px;}
+.width-1120p { width: 1120px; max-width: 1120px; min-width: 1120px;}
+.width-1125p { width: 1125px; max-width: 1125px; min-width: 1125px;}
+.width-1130p { width: 1130px; max-width: 1130px; min-width: 1130px;}
+.width-1135p { width: 1135px; max-width: 1135px; min-width: 1135px;}
+.width-1140p { width: 1140px; max-width: 1140px; min-width: 1140px;}
+.width-1145p { width: 1145px; max-width: 1145px; min-width: 1145px;}
+.width-1150p { width: 1150px; max-width: 1150px; min-width: 1150px;}
+.width-1155p { width: 1155px; max-width: 1155px; min-width: 1155px;}
+.width-1160p { width: 1160px; max-width: 1160px; min-width: 1160px;}
+.width-1165p { width: 1165px; max-width: 1165px; min-width: 1165px;}
+.width-1170p { width: 1170px; max-width: 1170px; min-width: 1170px;}
+.width-1175p { width: 1175px; max-width: 1175px; min-width: 1175px;}
+.width-1180p { width: 1180px; max-width: 1180px; min-width: 1180px;}
+.width-1185p { width: 1185px; max-width: 1185px; min-width: 1185px;}
+.width-1190p { width: 1190px; max-width: 1190px; min-width: 1190px;}
+.width-1195p { width: 1195px; max-width: 1195px; min-width: 1195px;}
+.width-1200p { width: 1200px; max-width: 1200px; min-width: 1200px;}
+.width-1205p { width: 1205px; max-width: 1205px; min-width: 1205px;}
+.width-1210p { width: 1210px; max-width: 1210px; min-width: 1210px;}
+.width-1215p { width: 1215px; max-width: 1215px; min-width: 1215px;}
+.width-1220p { width: 1220px; max-width: 1220px; min-width: 1220px;}
+.width-1225p { width: 1225px; max-width: 1225px; min-width: 1225px;}
+.width-1230p { width: 1230px; max-width: 1230px; min-width: 1230px;}
+.width-1235p { width: 1235px; max-width: 1235px; min-width: 1235px;}
+.width-1240p { width: 1240px; max-width: 1240px; min-width: 1240px;}
+.width-1245p { width: 1245px; max-width: 1245px; min-width: 1245px;}
+.width-1250p { width: 1250px; max-width: 1250px; min-width: 1250px;}
+.width-1255p { width: 1255px; max-width: 1255px; min-width: 1255px;}
+.width-1260p { width: 1260px; max-width: 1260px; min-width: 1260px;}
+.width-1265p { width: 1265px; max-width: 1265px; min-width: 1265px;}
+.width-1270p { width: 1270px; max-width: 1270px; min-width: 1270px;}
+.width-1275p { width: 1275px; max-width: 1275px; min-width: 1275px;}
+.width-1280p { width: 1280px; max-width: 1280px; min-width: 1280px;}
+.width-1285p { width: 1285px; max-width: 1285px; min-width: 1285px;}
+.width-1290p { width: 1290px; max-width: 1290px; min-width: 1290px;}
+.width-1295p { width: 1295px; max-width: 1295px; min-width: 1295px;}
+.width-1300p { width: 1300px; max-width: 1300px; min-width: 1300px;}
+.width-1305p { width: 1305px; max-width: 1305px; min-width: 1305px;}
+.width-1310p { width: 1310px; max-width: 1310px; min-width: 1310px;}
+.width-1315p { width: 1315px; max-width: 1315px; min-width: 1315px;}
+.width-1320p { width: 1320px; max-width: 1320px; min-width: 1320px;}
+.width-1325p { width: 1325px; max-width: 1325px; min-width: 1325px;}
+.width-1330p { width: 1330px; max-width: 1330px; min-width: 1330px;}
+.width-1335p { width: 1335px; max-width: 1335px; min-width: 1335px;}
+.width-1340p { width: 1340px; max-width: 1340px; min-width: 1340px;}
+.width-1345p { width: 1345px; max-width: 1345px; min-width: 1345px;}
+.width-1350p { width: 1350px; max-width: 1350px; min-width: 1350px;}
+.width-1355p { width: 1355px; max-width: 1355px; min-width: 1355px;}
+.width-1360p { width: 1360px; max-width: 1360px; min-width: 1360px;}
+.width-1365p { width: 1365px; max-width: 1365px; min-width: 1365px;}
+.width-1370p { width: 1370px; max-width: 1370px; min-width: 1370px;}
+.width-1375p { width: 1375px; max-width: 1375px; min-width: 1375px;}
+.width-1380p { width: 1380px; max-width: 1380px; min-width: 1380px;}
+.width-1385p { width: 1385px; max-width: 1385px; min-width: 1385px;}
+.width-1390p { width: 1390px; max-width: 1390px; min-width: 1390px;}
+.width-1395p { width: 1395px; max-width: 1395px; min-width: 1395px;}
+.width-1400p { width: 1400px; max-width: 1400px; min-width: 1400px;}
+.width-1405p { width: 1405px; max-width: 1405px; min-width: 1405px;}
+.width-1410p { width: 1410px; max-width: 1410px; min-width: 1410px;}
+.width-1415p { width: 1415px; max-width: 1415px; min-width: 1415px;}
+.width-1420p { width: 1420px; max-width: 1420px; min-width: 1420px;}
+.width-1425p { width: 1425px; max-width: 1425px; min-width: 1425px;}
+.width-1430p { width: 1430px; max-width: 1430px; min-width: 1430px;}
+.width-1435p { width: 1435px; max-width: 1435px; min-width: 1435px;}
+.width-1440p { width: 1440px; max-width: 1440px; min-width: 1440px;}
+.width-1445p { width: 1445px; max-width: 1445px; min-width: 1445px;}
+.width-1450p { width: 1450px; max-width: 1450px; min-width: 1450px;}
+.width-1455p { width: 1455px; max-width: 1455px; min-width: 1455px;}
+.width-1460p { width: 1460px; max-width: 1460px; min-width: 1460px;}
+.width-1465p { width: 1465px; max-width: 1465px; min-width: 1465px;}
+.width-1470p { width: 1470px; max-width: 1470px; min-width: 1470px;}
+.width-1475p { width: 1475px; max-width: 1475px; min-width: 1475px;}
+.width-1480p { width: 1480px; max-width: 1480px; min-width: 1480px;}
+.width-1485p { width: 1485px; max-width: 1485px; min-width: 1485px;}
+.width-1490p { width: 1490px; max-width: 1490px; min-width: 1490px;}
+.width-1495p { width: 1495px; max-width: 1495px; min-width: 1495px;}
+.width-1500p { width: 1500px; max-width: 1500px; min-width: 1500px;}
+.width-1505p { width: 1505px; max-width: 1505px; min-width: 1505px;}
+.width-1510p { width: 1510px; max-width: 1510px; min-width: 1510px;}
+.width-1515p { width: 1515px; max-width: 1515px; min-width: 1515px;}
+.width-1520p { width: 1520px; max-width: 1520px; min-width: 1520px;}
+.width-1525p { width: 1525px; max-width: 1525px; min-width: 1525px;}
+.width-1530p { width: 1530px; max-width: 1530px; min-width: 1530px;}
+.width-1535p { width: 1535px; max-width: 1535px; min-width: 1535px;}
+.width-1540p { width: 1540px; max-width: 1540px; min-width: 1540px;}
+.width-1545p { width: 1545px; max-width: 1545px; min-width: 1545px;}
+.width-1550p { width: 1550px; max-width: 1550px; min-width: 1550px;}
+.width-1555p { width: 1555px; max-width: 1555px; min-width: 1555px;}
+.width-1560p { width: 1560px; max-width: 1560px; min-width: 1560px;}
+.width-1565p { width: 1565px; max-width: 1565px; min-width: 1565px;}
+.width-1570p { width: 1570px; max-width: 1570px; min-width: 1570px;}
+.width-1575p { width: 1575px; max-width: 1575px; min-width: 1575px;}
+.width-1580p { width: 1580px; max-width: 1580px; min-width: 1580px;}
+.width-1585p { width: 1585px; max-width: 1585px; min-width: 1585px;}
+.width-1590p { width: 1590px; max-width: 1590px; min-width: 1590px;}
+.width-1595p { width: 1595px; max-width: 1595px; min-width: 1595px;}
+.width-1600p { width: 1600px; max-width: 1600px; min-width: 1600px;}
+.width-1605p { width: 1605px; max-width: 1605px; min-width: 1605px;}
+.width-1610p { width: 1610px; max-width: 1610px; min-width: 1610px;}
+.width-1615p { width: 1615px; max-width: 1615px; min-width: 1615px;}
+.width-1620p { width: 1620px; max-width: 1620px; min-width: 1620px;}
+.width-1625p { width: 1625px; max-width: 1625px; min-width: 1625px;}
+.width-1630p { width: 1630px; max-width: 1630px; min-width: 1630px;}
+.width-1635p { width: 1635px; max-width: 1635px; min-width: 1635px;}
+.width-1640p { width: 1640px; max-width: 1640px; min-width: 1640px;}
+.width-1645p { width: 1645px; max-width: 1645px; min-width: 1645px;}
+.width-1650p { width: 1650px; max-width: 1650px; min-width: 1650px;}
+.width-1655p { width: 1655px; max-width: 1655px; min-width: 1655px;}
+.width-1660p { width: 1660px; max-width: 1660px; min-width: 1660px;}
+.width-1665p { width: 1665px; max-width: 1665px; min-width: 1665px;}
+.width-1670p { width: 1670px; max-width: 1670px; min-width: 1670px;}
+.width-1675p { width: 1675px; max-width: 1675px; min-width: 1675px;}
+.width-1680p { width: 1680px; max-width: 1680px; min-width: 1680px;}
+.width-1685p { width: 1685px; max-width: 1685px; min-width: 1685px;}
+.width-1690p { width: 1690px; max-width: 1690px; min-width: 1690px;}
+.width-1695p { width: 1695px; max-width: 1695px; min-width: 1695px;}
+.width-1700p { width: 1700px; max-width: 1700px; min-width: 1700px;}
+.width-1705p { width: 1705px; max-width: 1705px; min-width: 1705px;}
+.width-1710p { width: 1710px; max-width: 1710px; min-width: 1710px;}
+.width-1715p { width: 1715px; max-width: 1715px; min-width: 1715px;}
+.width-1720p { width: 1720px; max-width: 1720px; min-width: 1720px;}
+.width-1725p { width: 1725px; max-width: 1725px; min-width: 1725px;}
+.width-1730p { width: 1730px; max-width: 1730px; min-width: 1730px;}
+.width-1735p { width: 1735px; max-width: 1735px; min-width: 1735px;}
+.width-1740p { width: 1740px; max-width: 1740px; min-width: 1740px;}
+.width-1745p { width: 1745px; max-width: 1745px; min-width: 1745px;}
+.width-1750p { width: 1750px; max-width: 1750px; min-width: 1750px;}
+.width-1755p { width: 1755px; max-width: 1755px; min-width: 1755px;}
+.width-1760p { width: 1760px; max-width: 1760px; min-width: 1760px;}
+.width-1765p { width: 1765px; max-width: 1765px; min-width: 1765px;}
+.width-1770p { width: 1770px; max-width: 1770px; min-width: 1770px;}
+.width-1775p { width: 1775px; max-width: 1775px; min-width: 1775px;}
+.width-1780p { width: 1780px; max-width: 1780px; min-width: 1780px;}
+.width-1785p { width: 1785px; max-width: 1785px; min-width: 1785px;}
+.width-1790p { width: 1790px; max-width: 1790px; min-width: 1790px;}
+.width-1795p { width: 1795px; max-width: 1795px; min-width: 1795px;}
+.width-1800p { width: 1800px; max-width: 1800px; min-width: 1800px;}
+.width-1805p { width: 1805px; max-width: 1805px; min-width: 1805px;}
+.width-1810p { width: 1810px; max-width: 1810px; min-width: 1810px;}
+.width-1815p { width: 1815px; max-width: 1815px; min-width: 1815px;}
+.width-1820p { width: 1820px; max-width: 1820px; min-width: 1820px;}
+.width-1825p { width: 1825px; max-width: 1825px; min-width: 1825px;}
+.width-1830p { width: 1830px; max-width: 1830px; min-width: 1830px;}
+.width-1835p { width: 1835px; max-width: 1835px; min-width: 1835px;}
+.width-1840p { width: 1840px; max-width: 1840px; min-width: 1840px;}
+.width-1845p { width: 1845px; max-width: 1845px; min-width: 1845px;}
+.width-1850p { width: 1850px; max-width: 1850px; min-width: 1850px;}
+.width-1855p { width: 1855px; max-width: 1855px; min-width: 1855px;}
+.width-1860p { width: 1860px; max-width: 1860px; min-width: 1860px;}
+.width-1865p { width: 1865px; max-width: 1865px; min-width: 1865px;}
+.width-1870p { width: 1870px; max-width: 1870px; min-width: 1870px;}
+.width-1875p { width: 1875px; max-width: 1875px; min-width: 1875px;}
+.width-1880p { width: 1880px; max-width: 1880px; min-width: 1880px;}
+.width-1885p { width: 1885px; max-width: 1885px; min-width: 1885px;}
+.width-1890p { width: 1890px; max-width: 1890px; min-width: 1890px;}
+.width-1895p { width: 1895px; max-width: 1895px; min-width: 1895px;}
+.width-1900p { width: 1900px; max-width: 1900px; min-width: 1900px;}
+.width-1905p { width: 1905px; max-width: 1905px; min-width: 1905px;}
+.width-1910p { width: 1910px; max-width: 1910px; min-width: 1910px;}
+.width-1915p { width: 1915px; max-width: 1915px; min-width: 1915px;}
+.width-1920p { width: 1920px; max-width: 1920px; min-width: 1920px;}
+.width-1925p { width: 1925px; max-width: 1925px; min-width: 1925px;}
+.width-1930p { width: 1930px; max-width: 1930px; min-width: 1930px;}
+.width-1935p { width: 1935px; max-width: 1935px; min-width: 1935px;}
+.width-1940p { width: 1940px; max-width: 1940px; min-width: 1940px;}
+.width-1945p { width: 1945px; max-width: 1945px; min-width: 1945px;}
+.width-1950p { width: 1950px; max-width: 1950px; min-width: 1950px;}
+.width-1955p { width: 1955px; max-width: 1955px; min-width: 1955px;}
+.width-1960p { width: 1960px; max-width: 1960px; min-width: 1960px;}
+.width-1965p { width: 1965px; max-width: 1965px; min-width: 1965px;}
+.width-1970p { width: 1970px; max-width: 1970px; min-width: 1970px;}
+.width-1975p { width: 1975px; max-width: 1975px; min-width: 1975px;}
+.width-1980p { width: 1980px; max-width: 1980px; min-width: 1980px;}
+.width-1985p { width: 1985px; max-width: 1985px; min-width: 1985px;}
+.width-1990p { width: 1990px; max-width: 1990px; min-width: 1990px;}
+.width-1995p { width: 1995px; max-width: 1995px; min-width: 1995px;}
+.width-2000p { width: 2000px; max-width: 2000px; min-width: 2000px;}
+
+//ALTOS PORCENTUALES
+.height-2-5 { height: 2.5%; }
+.height-5 { height: 5%; }
+.height-7-5 { height: 7.5%; }
+.height-10 { height: 10%;}
+.height-12-5 { height: 12.5%; }
+.height-15 { height: 15%;}
+.height-17-5 { height: 17.5%; }
+.height-20 { height: 20%;}
+.height-22-5 { height: 22.5%; }
+.height-25 { height: 25%;}
+.height-27-5 { height: 27.5%; }
+.height-30 { height: 30%;}
+.height-32-5 { height: 32.5%; }
+.height-35 { height: 35%;}
+.height-37-5 { height: 37.5%; }
+.height-40 { height: 40%;}
+.height-42-5 { height: 42.5%; }
+.height-45 { height: 45%; }
+.height-47-5 { height: 47.5%; }
+.height-50 { height: 50%; }
+.height-52-5 { height: 52.5%; }
+.height-55 { height: 55%; }
+.height-57-5 { height: 57.5%; }
+.height-60 { height: 60%; }
+.height-62-5 { height: 62.5%; }
+.height-65 { height: 65%; }
+.height-67-5 { height: 67.5%; }
+.height-70 { height: 70%; }
+.height-72-5 { height: 72.5%; }
+.height-75 { height: 75%; }
+.height-77-5 { height: 77.5%; }
+.height-80 { height: 80%; }
+.height-82-5 { height: 82.5%; }
+.height-85 { height: 85%; }
+.height-87-5 { height: 87.5%; }
+.height-90 { height: 90%; }
+.height-92-5 { height: 92.5%; }
+.height-95 { height: 95%; }
+.height-97-5 { height: 97.5%; }
+.height-100 { height: 100%; }
+
+// ALTOS PIXELES
+.height-5p { height: 5px; max-height: 5px; min-height: 5px; }
+.height-10p { height: 10px; max-height: 10px; min-height: 10px; }
+.height-15p { height: 15px; max-height: 15px; min-height: 15px; }
+.height-20p { height: 20px; max-height: 20px; min-height: 20px; }
+.height-25p { height: 25px; max-height: 25px; min-height: 25px; }
+.height-30p { height: 30px; max-height: 30px; min-height: 30px; }
+.height-35p { height: 35px; max-height: 35px; min-height: 35px; }
+.height-40p { height: 40px; max-height: 40px; min-height: 40px; }
+.height-45p { height: 45px; max-height: 45px; min-height: 45px; }
+.height-50p { height: 50px; max-height: 50px; min-height: 50px; }
+.height-55p { height: 55px; max-height: 55px; min-height: 55px; }
+.height-60p { height: 60px; max-height: 60px; min-height: 60px; }
+.height-65p { height: 65px; max-height: 65px; min-height: 65px; }
+.height-70p { height: 70px; max-height: 70px; min-height: 70px; }
+.height-75p { height: 75px; max-height: 75px; min-height: 75px; }
+.height-80p { height: 80px; max-height: 80px; min-height: 80px; }
+.height-85p { height: 85px; max-height: 85px; min-height: 85px; }
+.height-90p { height: 90px; max-height: 90px; min-height: 90px; }
+.height-95p { height: 95px; max-height: 95px; min-height: 95px; }
+.height-100p { height: 100px; max-height: 100px; min-height: 100px;}
+.height-100p { height: 105px; max-height: 105px; min-height: 105px;}
+.height-110p { height: 110px; max-height: 110px; min-height: 110px;}
+.height-115p { height: 115px; max-height: 115px; min-height: 115px;}
+.height-120p { height: 120px; max-height: 120px; min-height: 120px;}
+.height-125p { height: 125px; max-height: 125px; min-height: 125px;}
+.height-130p { height: 130px; max-height: 130px; min-height: 130px;}
+.height-135p { height: 135px; max-height: 135px; min-height: 135px;}
+.height-140p { height: 140px; max-height: 140px; min-height: 140px;}
+.height-145p { height: 145px; max-height: 145px; min-height: 145px;}
+.height-150p { height: 150px; max-height: 150px; min-height: 150px;}
+.height-155p { height: 155px; max-height: 155px; min-height: 155px;}
+.height-160p { height: 160px; max-height: 160px; min-height: 160px;}
+.height-165p { height: 165px; max-height: 165px; min-height: 165px;}
+.height-170p { height: 170px; max-height: 170px; min-height: 170px;}
+.height-175p { height: 175px; max-height: 175px; min-height: 175px;}
+.height-180p { height: 180px; max-height: 180px; min-height: 180px;}
+.height-185p { height: 185px; max-height: 185px; min-height: 185px;}
+.height-190p { height: 190px; max-height: 190px; min-height: 190px;}
+.height-195p { height: 195px; max-height: 195px; min-height: 195px;}
+.height-200p { height: 200px; max-height: 200px; min-height: 200px;}
+.height-205p { height: 205px; max-height: 205px; min-height: 205px;}
+.height-210p { height: 210px; max-height: 210px; min-height: 210px;}
+.height-215p { height: 215px; max-height: 215px; min-height: 215px;}
+.height-220p { height: 220px; max-height: 220px; min-height: 220px;}
+.height-225p { height: 225px; max-height: 225px; min-height: 225px;}
+.height-230p { height: 230px; max-height: 230px; min-height: 230px;}
+.height-235p { height: 235px; max-height: 235px; min-height: 235px;}
+.height-240p { height: 240px; max-height: 240px; min-height: 240px;}
+.height-245p { height: 245px; max-height: 245px; min-height: 245px;}
+.height-250p { height: 250px; max-height: 250px; min-height: 250px;}
+.height-255p { height: 255px; max-height: 255px; min-height: 255px;}
+.height-260p { height: 260px; max-height: 260px; min-height: 260px;}
+.height-265p { height: 265px; max-height: 265px; min-height: 265px;}
+.height-270p { height: 270px; max-height: 270px; min-height: 270px;}
+.height-275p { height: 275px; max-height: 275px; min-height: 275px;}
+.height-280p { height: 280px; max-height: 280px; min-height: 280px;}
+.height-285p { height: 285px; max-height: 285px; min-height: 285px;}
+.height-290p { height: 290px; max-height: 290px; min-height: 290px;}
+.height-295p { height: 295px; max-height: 295px; min-height: 295px;}
+.height-300p { height: 300px; max-height: 300px; min-height: 300px;}
+.height-305p { height: 305px; max-height: 305px; min-height: 305px;}
+.height-310p { height: 310px; max-height: 310px; min-height: 310px;}
+.height-315p { height: 315px; max-height: 315px; min-height: 315px;}
+.height-320p { height: 320px; max-height: 320px; min-height: 320px;}
+.height-325p { height: 325px; max-height: 325px; min-height: 325px;}
+.height-330p { height: 330px; max-height: 330px; min-height: 330px;}
+.height-335p { height: 335px; max-height: 335px; min-height: 335px;}
+.height-340p { height: 340px; max-height: 340px; min-height: 340px;}
+.height-345p { height: 345px; max-height: 345px; min-height: 345px;}
+.height-350p { height: 350px; max-height: 350px; min-height: 350px;}
+.height-355p { height: 355px; max-height: 355px; min-height: 355px;}
+.height-360p { height: 360px; max-height: 360px; min-height: 360px;}
+.height-365p { height: 365px; max-height: 365px; min-height: 365px;}
+.height-370p { height: 370px; max-height: 370px; min-height: 370px;}
+.height-375p { height: 375px; max-height: 375px; min-height: 375px;}
+.height-380p { height: 380px; max-height: 380px; min-height: 380px;}
+.height-385p { height: 385px; max-height: 385px; min-height: 385px;}
+.height-390p { height: 390px; max-height: 390px; min-height: 390px;}
+.height-395p { height: 395px; max-height: 395px; min-height: 395px;}
+.height-400p { height: 400px; max-height: 400px; min-height: 400px;}
+.height-405p { height: 405px; max-height: 405px; min-height: 405px;}
+.height-410p { height: 410px; max-height: 410px; min-height: 410px;}
+.height-415p { height: 415px; max-height: 415px; min-height: 415px;}
+.height-420p { height: 420px; max-height: 420px; min-height: 420px;}
+.height-425p { height: 425px; max-height: 425px; min-height: 425px;}
+.height-430p { height: 430px; max-height: 430px; min-height: 430px;}
+.height-435p { height: 435px; max-height: 435px; min-height: 435px;}
+.height-440p { height: 440px; max-height: 440px; min-height: 440px;}
+.height-445p { height: 445px; max-height: 445px; min-height: 445px;}
+.height-450p { height: 450px; max-height: 450px; min-height: 450px;}
+.height-455p { height: 455px; max-height: 455px; min-height: 455px;}
+.height-460p { height: 460px; max-height: 460px; min-height: 460px;}
+.height-465p { height: 465px; max-height: 465px; min-height: 465px;}
+.height-470p { height: 470px; max-height: 470px; min-height: 470px;}
+.height-475p { height: 475px; max-height: 475px; min-height: 475px;}
+.height-480p { height: 480px; max-height: 480px; min-height: 480px;}
+.height-485p { height: 485px; max-height: 485px; min-height: 485px;}
+.height-490p { height: 490px; max-height: 490px; min-height: 490px;}
+.height-495p { height: 495px; max-height: 495px; min-height: 495px;}
+.height-500p { height: 500px; max-height: 500px; min-height: 500px;}
+.height-505p { height: 505px; max-height: 505px; min-height: 505px;}
+.height-510p { height: 510px; max-height: 510px; min-height: 510px;}
+.height-515p { height: 515px; max-height: 515px; min-height: 515px;}
+.height-520p { height: 520px; max-height: 520px; min-height: 520px;}
+.height-525p { height: 525px; max-height: 525px; min-height: 525px;}
+.height-530p { height: 530px; max-height: 530px; min-height: 530px;}
+.height-535p { height: 535px; max-height: 535px; min-height: 535px;}
+.height-540p { height: 540px; max-height: 540px; min-height: 540px;}
+.height-545p { height: 545px; max-height: 545px; min-height: 545px;}
+.height-550p { height: 550px; max-height: 550px; min-height: 550px;}
+.height-555p { height: 555px; max-height: 555px; min-height: 555px;}
+.height-560p { height: 560px; max-height: 560px; min-height: 560px;}
+.height-565p { height: 565px; max-height: 565px; min-height: 565px;}
+.height-570p { height: 570px; max-height: 570px; min-height: 570px;}
+.height-575p { height: 575px; max-height: 575px; min-height: 575px;}
+.height-580p { height: 580px; max-height: 580px; min-height: 580px;}
+.height-585p { height: 585px; max-height: 585px; min-height: 585px;}
+.height-590p { height: 590px; max-height: 590px; min-height: 590px;}
+.height-595p { height: 595px; max-height: 595px; min-height: 595px;}
+.height-600p { height: 600px; max-height: 600px; min-height: 600px;}
+.height-605p { height: 605px; max-height: 605px; min-height: 605px;}
+.height-610p { height: 610px; max-height: 610px; min-height: 610px;}
+.height-615p { height: 615px; max-height: 615px; min-height: 615px;}
+.height-620p { height: 620px; max-height: 620px; min-height: 620px;}
+.height-625p { height: 625px; max-height: 625px; min-height: 625px;}
+.height-630p { height: 630px; max-height: 630px; min-height: 630px;}
+.height-635p { height: 635px; max-height: 635px; min-height: 635px;}
+.height-640p { height: 640px; max-height: 640px; min-height: 640px;}
+.height-645p { height: 645px; max-height: 645px; min-height: 645px;}
+.height-650p { height: 650px; max-height: 650px; min-height: 650px;}
+.height-655p { height: 655px; max-height: 655px; min-height: 655px;}
+.height-660p { height: 660px; max-height: 660px; min-height: 660px;}
+.height-665p { height: 665px; max-height: 665px; min-height: 665px;}
+.height-670p { height: 670px; max-height: 670px; min-height: 670px;}
+.height-675p { height: 675px; max-height: 675px; min-height: 675px;}
+.height-680p { height: 680px; max-height: 680px; min-height: 680px;}
+.height-685p { height: 685px; max-height: 685px; min-height: 685px;}
+.height-690p { height: 690px; max-height: 690px; min-height: 690px;}
+.height-695p { height: 695px; max-height: 695px; min-height: 695px;}
+.height-700p { height: 700px; max-height: 700px; min-height: 700px;}
+.height-705p { height: 705px; max-height: 705px; min-height: 705px;}
+.height-710p { height: 710px; max-height: 710px; min-height: 710px;}
+.height-715p { height: 715px; max-height: 715px; min-height: 715px;}
+.height-720p { height: 720px; max-height: 720px; min-height: 720px;}
+.height-725p { height: 725px; max-height: 725px; min-height: 725px;}
+.height-730p { height: 730px; max-height: 730px; min-height: 730px;}
+.height-735p { height: 735px; max-height: 735px; min-height: 735px;}
+.height-740p { height: 740px; max-height: 740px; min-height: 740px;}
+.height-745p { height: 745px; max-height: 745px; min-height: 745px;}
+.height-750p { height: 750px; max-height: 750px; min-height: 750px;}
+.height-755p { height: 755px; max-height: 755px; min-height: 755px;}
+.height-760p { height: 760px; max-height: 760px; min-height: 760px;}
+.height-765p { height: 765px; max-height: 765px; min-height: 765px;}
+.height-770p { height: 770px; max-height: 770px; min-height: 770px;}
+.height-775p { height: 775px; max-height: 775px; min-height: 775px;}
+.height-780p { height: 780px; max-height: 780px; min-height: 780px;}
+.height-785p { height: 785px; max-height: 785px; min-height: 785px;}
+.height-790p { height: 790px; max-height: 790px; min-height: 790px;}
+.height-795p { height: 795px; max-height: 795px; min-height: 795px;}
+.height-800p { height: 800px; max-height: 800px; min-height: 800px;}
+.height-805p { height: 805px; max-height: 805px; min-height: 805px;}
+.height-810p { height: 810px; max-height: 810px; min-height: 810px;}
+.height-815p { height: 815px; max-height: 815px; min-height: 815px;}
+.height-820p { height: 820px; max-height: 820px; min-height: 820px;}
+.height-825p { height: 825px; max-height: 825px; min-height: 825px;}
+.height-830p { height: 830px; max-height: 830px; min-height: 830px;}
+.height-835p { height: 835px; max-height: 835px; min-height: 835px;}
+.height-840p { height: 840px; max-height: 840px; min-height: 840px;}
+.height-845p { height: 845px; max-height: 845px; min-height: 845px;}
+.height-850p { height: 850px; max-height: 850px; min-height: 850px;}
+.height-855p { height: 855px; max-height: 855px; min-height: 855px;}
+.height-860p { height: 860px; max-height: 860px; min-height: 860px;}
+.height-865p { height: 865px; max-height: 865px; min-height: 865px;}
+.height-870p { height: 870px; max-height: 870px; min-height: 870px;}
+.height-875p { height: 875px; max-height: 875px; min-height: 875px;}
+.height-880p { height: 880px; max-height: 880px; min-height: 880px;}
+.height-885p { height: 885px; max-height: 885px; min-height: 885px;}
+.height-890p { height: 890px; max-height: 890px; min-height: 890px;}
+.height-895p { height: 895px; max-height: 895px; min-height: 895px;}
+.height-900p { height: 900px; max-height: 900px; min-height: 900px;}
+.height-905p { height: 905px; max-height: 905px; min-height: 905px;}
+.height-910p { height: 910px; max-height: 910px; min-height: 910px;}
+.height-915p { height: 915px; max-height: 915px; min-height: 915px;}
+.height-920p { height: 920px; max-height: 920px; min-height: 920px;}
+.height-925p { height: 925px; max-height: 925px; min-height: 925px;}
+.height-930p { height: 930px; max-height: 930px; min-height: 930px;}
+.height-935p { height: 935px; max-height: 935px; min-height: 935px;}
+.height-940p { height: 940px; max-height: 940px; min-height: 940px;}
+.height-945p { height: 945px; max-height: 945px; min-height: 945px;}
+.height-950p { height: 950px; max-height: 950px; min-height: 950px;}
+.height-955p { height: 955px; max-height: 955px; min-height: 955px;}
+.height-960p { height: 960px; max-height: 960px; min-height: 960px;}
+.height-965p { height: 965px; max-height: 965px; min-height: 965px;}
+.height-970p { height: 970px; max-height: 970px; min-height: 970px;}
+.height-975p { height: 975px; max-height: 975px; min-height: 975px;}
+.height-980p { height: 980px; max-height: 980px; min-height: 980px;}
+.height-985p { height: 985px; max-height: 985px; min-height: 985px;}
+.height-990p { height: 990px; max-height: 990px; min-height: 990px;}
+.height-995p { height: 995px; max-height: 995px; min-height: 995px;}
+.height-1000p { height: 1000px; max-height: 1000px; min-height: 1000px;}
+.height-1005p { height: 1005px; max-height: 1005px; min-height: 1005px; }
+.height-1010p { height: 1010px; max-height: 1010px; min-height: 1010px; }
+.height-1015p { height: 1015px; max-height: 1015px; min-height: 1015px; }
+.height-1020p { height: 1020px; max-height: 1020px; min-height: 1020px; }
+.height-1025p { height: 1025px; max-height: 1025px; min-height: 1025px; }
+.height-1030p { height: 1030px; max-height: 1030px; min-height: 1030px; }
+.height-1035p { height: 1035px; max-height: 1035px; min-height: 1035px; }
+.height-1040p { height: 1040px; max-height: 1040px; min-height: 1040px; }
+.height-1045p { height: 1045px; max-height: 1045px; min-height: 1045px; }
+.height-1050p { height: 1050px; max-height: 1050px; min-height: 1050px; }
+.height-1055p { height: 1055px; max-height: 1055px; min-height: 1055px; }
+.height-1060p { height: 1060px; max-height: 1060px; min-height: 1060px; }
+.height-1065p { height: 1065px; max-height: 1065px; min-height: 1065px; }
+.height-1070p { height: 1070px; max-height: 1070px; min-height: 1070px; }
+.height-1075p { height: 1075px; max-height: 1075px; min-height: 1075px; }
+.height-1080p { height: 1080px; max-height: 1080px; min-height: 1080px; }
+.height-1085p { height: 1085px; max-height: 1085px; min-height: 1085px; }
+.height-1090p { height: 1090px; max-height: 1090px; min-height: 1090px; }
+.height-1095p { height: 1095px; max-height: 1095px; min-height: 1095px; }
+.height-1100p { height: 1100px; max-height: 1100px; min-height: 1100px;}
+.height-1105p { height: 1105px; max-height: 1105px; min-height: 1105px;}
+.height-1110p { height: 1110px; max-height: 1110px; min-height: 1110px;}
+.height-1115p { height: 1115px; max-height: 1115px; min-height: 1115px;}
+.height-1120p { height: 1120px; max-height: 1120px; min-height: 1120px;}
+.height-1125p { height: 1125px; max-height: 1125px; min-height: 1125px;}
+.height-1130p { height: 1130px; max-height: 1130px; min-height: 1130px;}
+.height-1135p { height: 1135px; max-height: 1135px; min-height: 1135px;}
+.height-1140p { height: 1140px; max-height: 1140px; min-height: 1140px;}
+.height-1145p { height: 1145px; max-height: 1145px; min-height: 1145px;}
+.height-1150p { height: 1150px; max-height: 1150px; min-height: 1150px;}
+.height-1155p { height: 1155px; max-height: 1155px; min-height: 1155px;}
+.height-1160p { height: 1160px; max-height: 1160px; min-height: 1160px;}
+.height-1165p { height: 1165px; max-height: 1165px; min-height: 1165px;}
+.height-1170p { height: 1170px; max-height: 1170px; min-height: 1170px;}
+.height-1175p { height: 1175px; max-height: 1175px; min-height: 1175px;}
+.height-1180p { height: 1180px; max-height: 1180px; min-height: 1180px;}
+.height-1185p { height: 1185px; max-height: 1185px; min-height: 1185px;}
+.height-1190p { height: 1190px; max-height: 1190px; min-height: 1190px;}
+.height-1195p { height: 1195px; max-height: 1195px; min-height: 1195px;}
+.height-1200p { height: 1200px; max-height: 1200px; min-height: 1200px;}
+.height-1205p { height: 1205px; max-height: 1205px; min-height: 1205px;}
+.height-1210p { height: 1210px; max-height: 1210px; min-height: 1210px;}
+.height-1215p { height: 1215px; max-height: 1215px; min-height: 1215px;}
+.height-1220p { height: 1220px; max-height: 1220px; min-height: 1220px;}
+.height-1225p { height: 1225px; max-height: 1225px; min-height: 1225px;}
+.height-1230p { height: 1230px; max-height: 1230px; min-height: 1230px;}
+.height-1235p { height: 1235px; max-height: 1235px; min-height: 1235px;}
+.height-1240p { height: 1240px; max-height: 1240px; min-height: 1240px;}
+.height-1245p { height: 1245px; max-height: 1245px; min-height: 1245px;}
+.height-1250p { height: 1250px; max-height: 1250px; min-height: 1250px;}
+.height-1255p { height: 1255px; max-height: 1255px; min-height: 1255px;}
+.height-1260p { height: 1260px; max-height: 1260px; min-height: 1260px;}
+.height-1265p { height: 1265px; max-height: 1265px; min-height: 1265px;}
+.height-1270p { height: 1270px; max-height: 1270px; min-height: 1270px;}
+.height-1275p { height: 1275px; max-height: 1275px; min-height: 1275px;}
+.height-1280p { height: 1280px; max-height: 1280px; min-height: 1280px;}
+.height-1285p { height: 1285px; max-height: 1285px; min-height: 1285px;}
+.height-1290p { height: 1290px; max-height: 1290px; min-height: 1290px;}
+.height-1295p { height: 1295px; max-height: 1295px; min-height: 1295px;}
+.height-1300p { height: 1300px; max-height: 1300px; min-height: 1300px;}
+.height-1305p { height: 1305px; max-height: 1305px; min-height: 1305px;}
+.height-1310p { height: 1310px; max-height: 1310px; min-height: 1310px;}
+.height-1315p { height: 1315px; max-height: 1315px; min-height: 1315px;}
+.height-1320p { height: 1320px; max-height: 1320px; min-height: 1320px;}
+.height-1325p { height: 1325px; max-height: 1325px; min-height: 1325px;}
+.height-1330p { height: 1330px; max-height: 1330px; min-height: 1330px;}
+.height-1335p { height: 1335px; max-height: 1335px; min-height: 1335px;}
+.height-1340p { height: 1340px; max-height: 1340px; min-height: 1340px;}
+.height-1345p { height: 1345px; max-height: 1345px; min-height: 1345px;}
+.height-1350p { height: 1350px; max-height: 1350px; min-height: 1350px;}
+.height-1355p { height: 1355px; max-height: 1355px; min-height: 1355px;}
+.height-1360p { height: 1360px; max-height: 1360px; min-height: 1360px;}
+.height-1365p { height: 1365px; max-height: 1365px; min-height: 1365px;}
+.height-1370p { height: 1370px; max-height: 1370px; min-height: 1370px;}
+.height-1375p { height: 1375px; max-height: 1375px; min-height: 1375px;}
+.height-1380p { height: 1380px; max-height: 1380px; min-height: 1380px;}
+.height-1385p { height: 1385px; max-height: 1385px; min-height: 1385px;}
+.height-1390p { height: 1390px; max-height: 1390px; min-height: 1390px;}
+.height-1395p { height: 1395px; max-height: 1395px; min-height: 1395px;}
+.height-1400p { height: 1400px; max-height: 1400px; min-height: 1400px;}
+.height-1405p { height: 1405px; max-height: 1405px; min-height: 1405px;}
+.height-1410p { height: 1410px; max-height: 1410px; min-height: 1410px;}
+.height-1415p { height: 1415px; max-height: 1415px; min-height: 1415px;}
+.height-1420p { height: 1420px; max-height: 1420px; min-height: 1420px;}
+.height-1425p { height: 1425px; max-height: 1425px; min-height: 1425px;}
+.height-1430p { height: 1430px; max-height: 1430px; min-height: 1430px;}
+.height-1435p { height: 1435px; max-height: 1435px; min-height: 1435px;}
+.height-1440p { height: 1440px; max-height: 1440px; min-height: 1440px;}
+.height-1445p { height: 1445px; max-height: 1445px; min-height: 1445px;}
+.height-1450p { height: 1450px; max-height: 1450px; min-height: 1450px;}
+.height-1455p { height: 1455px; max-height: 1455px; min-height: 1455px;}
+.height-1460p { height: 1460px; max-height: 1460px; min-height: 1460px;}
+.height-1465p { height: 1465px; max-height: 1465px; min-height: 1465px;}
+.height-1470p { height: 1470px; max-height: 1470px; min-height: 1470px;}
+.height-1475p { height: 1475px; max-height: 1475px; min-height: 1475px;}
+.height-1480p { height: 1480px; max-height: 1480px; min-height: 1480px;}
+.height-1485p { height: 1485px; max-height: 1485px; min-height: 1485px;}
+.height-1490p { height: 1490px; max-height: 1490px; min-height: 1490px;}
+.height-1495p { height: 1495px; max-height: 1495px; min-height: 1495px;}
+.height-1500p { height: 1500px; max-height: 1500px; min-height: 1500px;}
+.height-1505p { height: 1505px; max-height: 1505px; min-height: 1505px;}
+.height-1510p { height: 1510px; max-height: 1510px; min-height: 1510px;}
+.height-1515p { height: 1515px; max-height: 1515px; min-height: 1515px;}
+.height-1520p { height: 1520px; max-height: 1520px; min-height: 1520px;}
+.height-1525p { height: 1525px; max-height: 1525px; min-height: 1525px;}
+.height-1530p { height: 1530px; max-height: 1530px; min-height: 1530px;}
+.height-1535p { height: 1535px; max-height: 1535px; min-height: 1535px;}
+.height-1540p { height: 1540px; max-height: 1540px; min-height: 1540px;}
+.height-1545p { height: 1545px; max-height: 1545px; min-height: 1545px;}
+.height-1550p { height: 1550px; max-height: 1550px; min-height: 1550px;}
+.height-1555p { height: 1555px; max-height: 1555px; min-height: 1555px;}
+.height-1560p { height: 1560px; max-height: 1560px; min-height: 1560px;}
+.height-1565p { height: 1565px; max-height: 1565px; min-height: 1565px;}
+.height-1570p { height: 1570px; max-height: 1570px; min-height: 1570px;}
+.height-1575p { height: 1575px; max-height: 1575px; min-height: 1575px;}
+.height-1580p { height: 1580px; max-height: 1580px; min-height: 1580px;}
+.height-1585p { height: 1585px; max-height: 1585px; min-height: 1585px;}
+.height-1590p { height: 1590px; max-height: 1590px; min-height: 1590px;}
+.height-1595p { height: 1595px; max-height: 1595px; min-height: 1595px;}
+.height-1600p { height: 1600px; max-height: 1600px; min-height: 1600px;}
+.height-1605p { height: 1605px; max-height: 1605px; min-height: 1605px;}
+.height-1610p { height: 1610px; max-height: 1610px; min-height: 1610px;}
+.height-1615p { height: 1615px; max-height: 1615px; min-height: 1615px;}
+.height-1620p { height: 1620px; max-height: 1620px; min-height: 1620px;}
+.height-1625p { height: 1625px; max-height: 1625px; min-height: 1625px;}
+.height-1630p { height: 1630px; max-height: 1630px; min-height: 1630px;}
+.height-1635p { height: 1635px; max-height: 1635px; min-height: 1635px;}
+.height-1640p { height: 1640px; max-height: 1640px; min-height: 1640px;}
+.height-1645p { height: 1645px; max-height: 1645px; min-height: 1645px;}
+.height-1650p { height: 1650px; max-height: 1650px; min-height: 1650px;}
+.height-1655p { height: 1655px; max-height: 1655px; min-height: 1655px;}
+.height-1660p { height: 1660px; max-height: 1660px; min-height: 1660px;}
+.height-1665p { height: 1665px; max-height: 1665px; min-height: 1665px;}
+.height-1670p { height: 1670px; max-height: 1670px; min-height: 1670px;}
+.height-1675p { height: 1675px; max-height: 1675px; min-height: 1675px;}
+.height-1680p { height: 1680px; max-height: 1680px; min-height: 1680px;}
+.height-1685p { height: 1685px; max-height: 1685px; min-height: 1685px;}
+.height-1690p { height: 1690px; max-height: 1690px; min-height: 1690px;}
+.height-1695p { height: 1695px; max-height: 1695px; min-height: 1695px;}
+.height-1700p { height: 1700px; max-height: 1700px; min-height: 1700px;}
+.height-1705p { height: 1705px; max-height: 1705px; min-height: 1705px;}
+.height-1710p { height: 1710px; max-height: 1710px; min-height: 1710px;}
+.height-1715p { height: 1715px; max-height: 1715px; min-height: 1715px;}
+.height-1720p { height: 1720px; max-height: 1720px; min-height: 1720px;}
+.height-1725p { height: 1725px; max-height: 1725px; min-height: 1725px;}
+.height-1730p { height: 1730px; max-height: 1730px; min-height: 1730px;}
+.height-1735p { height: 1735px; max-height: 1735px; min-height: 1735px;}
+.height-1740p { height: 1740px; max-height: 1740px; min-height: 1740px;}
+.height-1745p { height: 1745px; max-height: 1745px; min-height: 1745px;}
+.height-1750p { height: 1750px; max-height: 1750px; min-height: 1750px;}
+.height-1755p { height: 1755px; max-height: 1755px; min-height: 1755px;}
+.height-1760p { height: 1760px; max-height: 1760px; min-height: 1760px;}
+.height-1765p { height: 1765px; max-height: 1765px; min-height: 1765px;}
+.height-1770p { height: 1770px; max-height: 1770px; min-height: 1770px;}
+.height-1775p { height: 1775px; max-height: 1775px; min-height: 1775px;}
+.height-1780p { height: 1780px; max-height: 1780px; min-height: 1780px;}
+.height-1785p { height: 1785px; max-height: 1785px; min-height: 1785px;}
+.height-1790p { height: 1790px; max-height: 1790px; min-height: 1790px;}
+.height-1795p { height: 1795px; max-height: 1795px; min-height: 1795px;}
+.height-1800p { height: 1800px; max-height: 1800px; min-height: 1800px;}
+.height-1805p { height: 1805px; max-height: 1805px; min-height: 1805px;}
+.height-1810p { height: 1810px; max-height: 1810px; min-height: 1810px;}
+.height-1815p { height: 1815px; max-height: 1815px; min-height: 1815px;}
+.height-1820p { height: 1820px; max-height: 1820px; min-height: 1820px;}
+.height-1825p { height: 1825px; max-height: 1825px; min-height: 1825px;}
+.height-1830p { height: 1830px; max-height: 1830px; min-height: 1830px;}
+.height-1835p { height: 1835px; max-height: 1835px; min-height: 1835px;}
+.height-1840p { height: 1840px; max-height: 1840px; min-height: 1840px;}
+.height-1845p { height: 1845px; max-height: 1845px; min-height: 1845px;}
+.height-1850p { height: 1850px; max-height: 1850px; min-height: 1850px;}
+.height-1855p { height: 1855px; max-height: 1855px; min-height: 1855px;}
+.height-1860p { height: 1860px; max-height: 1860px; min-height: 1860px;}
+.height-1865p { height: 1865px; max-height: 1865px; min-height: 1865px;}
+.height-1870p { height: 1870px; max-height: 1870px; min-height: 1870px;}
+.height-1875p { height: 1875px; max-height: 1875px; min-height: 1875px;}
+.height-1880p { height: 1880px; max-height: 1880px; min-height: 1880px;}
+.height-1885p { height: 1885px; max-height: 1885px; min-height: 1885px;}
+.height-1890p { height: 1890px; max-height: 1890px; min-height: 1890px;}
+.height-1895p { height: 1895px; max-height: 1895px; min-height: 1895px;}
+.height-1900p { height: 1900px; max-height: 1900px; min-height: 1900px;}
+.height-1905p { height: 1905px; max-height: 1905px; min-height: 1905px;}
+.height-1910p { height: 1910px; max-height: 1910px; min-height: 1910px;}
+.height-1915p { height: 1915px; max-height: 1915px; min-height: 1915px;}
+.height-1920p { height: 1920px; max-height: 1920px; min-height: 1920px;}
+.height-1925p { height: 1925px; max-height: 1925px; min-height: 1925px;}
+.height-1930p { height: 1930px; max-height: 1930px; min-height: 1930px;}
+.height-1935p { height: 1935px; max-height: 1935px; min-height: 1935px;}
+.height-1940p { height: 1940px; max-height: 1940px; min-height: 1940px;}
+.height-1945p { height: 1945px; max-height: 1945px; min-height: 1945px;}
+.height-1950p { height: 1950px; max-height: 1950px; min-height: 1950px;}
+.height-1955p { height: 1955px; max-height: 1955px; min-height: 1955px;}
+.height-1960p { height: 1960px; max-height: 1960px; min-height: 1960px;}
+.height-1965p { height: 1965px; max-height: 1965px; min-height: 1965px;}
+.height-1970p { height: 1970px; max-height: 1970px; min-height: 1970px;}
+.height-1975p { height: 1975px; max-height: 1975px; min-height: 1975px;}
+.height-1980p { height: 1980px; max-height: 1980px; min-height: 1980px;}
+.height-1985p { height: 1985px; max-height: 1985px; min-height: 1985px;}
+.height-1990p { height: 1990px; max-height: 1990px; min-height: 1990px;}
+.height-1995p { height: 1995px; max-height: 1995px; min-height: 1995px;}
+.height-2000p { height: 2000px; max-height: 2000px; min-height: 2000px;}
+
+
+//ALIGN TEXTS
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  @include rdnt-flex-row;
+  &.start {
+    justify-content: flex-start;
+  }
+  &.end {
+    justify-content: flex-end;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.between{
+    justify-content: space-between;
+  }
+}
+
+.flex-column {
+  @include rdnt-flex-col;
+  &.start {
+    align-items: flex-start;
+  }
+  &.end {
+    justify-content: flex-end;
+  }
+  &.center {
+    align-items: center;
+  }
+  &.between{
+    justify-content: space-between;
+  }
+}
+
+/*
+//SCROLLBARS
+::-webkit-scrollbar {
+  width: 10px;
+  @include rdnt-animate;
+}
+::-webkit-scrollbar-track {
+  background: $white;
+  @include rdnt-animate;
+}
+.scrollable-content::-webkit-scrollbar * {
+  background: $white;
+}
+::-webkit-scrollbar-thumb {
+  background: $color-1;
+  @include rdnt-animate;
+}
+*/
+// Z-INDEX AUX USEFUL CLASSES
+
+.rdnt-z-index-10{
+  z-index: 10!important;
+}
+.rdnt-z-index-20{
+  z-index: 20!important;
+}
+.rdnt-z-index-30{
+  z-index: 30!important;
+}
+.rdnt-z-index-40{
+  z-index: 40!important;
+}
+.rdnt-z-index-50{
+  z-index: 50!important;
+}
+.rdnt-z-index-60{
+  z-index: 60!important;
+}
+.rdnt-z-index-70{
+  z-index: 70!important;
+}
+.rdnt-z-index-80{
+  z-index: 80!important;
+}
+.rdnt-z-index-90{
+  z-index: 90!important;
+}
+.rdnt-z-index-100{
+  z-index: 100!important;
+}

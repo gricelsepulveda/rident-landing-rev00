@@ -1,0 +1,850 @@
+doctype html
+html lang="es"
+
+  head
+    meta charset="utf-8"
+    title Rident - Todos merecen sonreír
+    meta name="description" content="clinica y consulta dental"
+    meta name="keywords" content="dental, consulta, clinica, ortodoncia, endodoncia, frenillos, puente alto, providencia"/
+    meta name="author" content="Gricel Sepulveda"/
+    /! VIEWPORT RESPONSIVE
+    meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/
+    /! NORMALIZE
+    link rel="stylesheet" href="../../common/styles/sanitize.css" type="text/css"
+    /! FONT AWESOME
+    script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"
+    /! STYLES BANNER UNSLIDER
+    link rel="stylesheet" href="../../common/styles/unslider.css" type="text/css"
+    /! STYLES
+    link rel="stylesheet" href="../styles/rdnt-landing.css" type="text/css"
+    /! JQUERY
+    script src="../../common/js/jquery-3.2.1.min.js"
+    /! CUSTOM SCRIPTS
+    script src="../../common/js/smooth-scroll.min.js"
+    script src="../../common/js/rdnt-landing.js"
+    /! BANNER ROTATOR
+    script src="../../common/js/unslider-min.js" 
+
+  body
+    .rdnt-wrapper-page
+      /! MENU
+      nav.rdnt-menu-nav
+        .rdnt-mobile-trigger
+          i.fas.fa-bars
+        .rdnt-logo
+          a href="#"
+            img src="../../common/assets/img/logo-rident.svg"
+        ul.rdnt-menu.display
+          li.rdnt-menu-li.active
+            a data-scroll="" href="#home" Inicio
+            .rdnt-caret
+          li.rdnt-menu-li
+            a data-scroll="" href="#especialities" Especialidades
+            .rdnt-caret
+          li.rdnt-menu-li
+            a data-scroll="" href="#promotions" Promociones
+            .rdnt-caret
+          li.rdnt-menu-li
+            a data-scroll="" href="#venues" Sedes
+            .rdnt-caret
+          li.rdnt-menu-li
+            a data-scroll="" href="#us" Nosotros
+            .rdnt-caret
+          li.rdnt-menu-li
+            a data-scroll="" href="#enterprise" Convenios
+            .rdnt-caret
+        span.rdnt-open Abierto Lun-Sab 9:00-20:00hrs 
+      .rdnt-reservation
+        span.rdnt-reservation-new
+          span.rdnt-icon
+            i.far.fa-calendar-alt
+          | Reserva tu hora
+        span.rdnt-text
+          | Consulta tus reservas 
+          a acá
+      
+      /! HOME
+      section.rdnt-home id="home"
+        /! HOME BANNER
+        .rdnt-banner-home.rdnt-banner-home-slider
+          ul.rdnt-banner-home-ul
+            li.rdnt-banner-home-li
+              article.rdnt-banner-caption
+                h4.rdnt-banner-h4 Estrenamos nuevo sitio web
+                p.rdnt-banner-p Y para celebrar lo hacemos con las mejores promociones
+                a href="#promotions"
+                  button.rdnt-banner-button type="button" Leer más
+            li.rdnt-banner-home-li
+              article.rdnt-banner-caption
+                h4.rdnt-banner-h4 Sedes completamente remodeladas
+                p.rdnt-banner-p Para tu comodidad y confianza, nuestras sedes están amobladas siempre con nuevos accesorios y mobiliarios impecables.
+                a href="#venues"
+                  button.rdnt-banner-button type="button" Conócelas
+            li.rdnt-banner-home-li
+              article.rdnt-banner-caption
+                h4.rdnt-banner-h4 Profesionales amables y atentos
+                p.rdnt-banner-p Sabemos que ir al dentista es conocido como algo incómodo, acá nos preocupamos de trabajar con profesionales que se enfoncan en que tu atención prime la tranquilidad.
+                a href="#us"
+                  button.rdnt-banner-button type="button" Leer más
+        /! HOME DIRECTIONS
+        .rdnt-showcase-directions
+          article.rdnt-direction
+            .rdnt-direction-wrapper
+              h3.rdnt-directions-h3 Metro Tobalaba
+              .flex-row.start
+                span.rdnt-directions-span
+                  i.fas.fa-phone
+                  span 
+                    a href="tel:+56222335866" 22 2335866
+                span.rdnt-directions-span
+                  i.fas.fa-phone
+                  span 
+                    a href="tel:+56949596451" 9 49596451
+              a target="blank" href="https://goo.gl/maps/h8oy3f4pLKk"
+                p.rdnt-directions-p Luis Thayer Ojeda 157 Of. 303 Providencia
+          article.rdnt-direction
+            .rdnt-direction-wrapper
+              h3.rdnt-directions-h3 Metro Salvador
+              .flex-row.start
+                span.rdnt-directions-span
+                  i.fas.fa-phone 
+                  span 
+                    a href="tel:+56224015024" 22 4015024
+                span.rdnt-directions-span
+                  i.fas.fa-phone
+                  span 
+                    a href="tel:+56949596451" 9 49596451
+              a target="blank" href="https://goo.gl/maps/FCWnZxN1rnR2"
+                p.rdnt-directions-p Avenida Salvador 95 Of. 416 Providencia
+          article.rdnt-direction
+            .rdnt-direction-wrapper
+              h3.rdnt-directions-h3 Metro Puente Alto
+              .flex-row.start
+                span.rdnt-directions-span
+                  i.fas.fa-phone
+                  span
+                    a href="tel:+56228510759" 22 8510759
+                span.rdnt-directions-span
+                  i.fas.fa-phone
+                  span 
+                    a href="tel:+56948587534" 9 48587534
+              a target="blank" href="https://goo.gl/maps/nqe7xAhC5FD2"
+                p.rdnt-directions-p José Manuel Irarrázabal 0180 Of. 704 Pte. Alto
+
+      /! PROMOTIONS
+      section.rdnt-promotions id="promotions"
+        h3.rdnt-h3
+          span Sonríe:
+          | ¡Flexibilidad de pago y urgencias 24/7!
+        .rdnt-banner-promo-slider
+          ul.rdnt-banner-promo-slider-ul 
+            li.rdnt-banner-promo-slider-li
+              .rdnt-banner-promo
+                .rdnt-banner-photo-wrapper
+                  .rdnt-banner-photo
+                  article.rdnt-banner-promo-art
+                    h2.rdnt-banner-promo-h2 Nuevos clientes
+                    h1.rdnt-banner-promo-h1 Promoción Ultra
+                    .flex-row.center
+                      .rdnt-banner-promo-ul
+                        .rdnt-banner-promo-li Blanqueamiento ultra led + limpieza dental con ultrasonido
+                        .rdnt-banner-promo-li + Profilaxis + IHO + diagnóstico
+                      a target="blank" href="https://www.groupon.cl/deals/clinica-rident-blanqueamiento-dental-2-1"
+                        span.rdnt-banner-promo-price $31.990
+            li.rdnt-banner-promo-slider-li
+              .rdnt-banner-promo
+                .rdnt-banner-photo-wrapper
+                  .rdnt-banner-photo
+                  article.rdnt-banner-promo-art
+                    h2.rdnt-banner-promo-h2 Nuevos clientes
+                    h1.rdnt-banner-promo-h1 Promoción Normal
+                    .flex-row.center
+                      .rdnt-banner-promo-ul
+                        .rdnt-banner-promo-li Blanqueamiento led + limpieza dental con ultrasonido
+                        .rdnt-banner-promo-li profilaxis + IHO + diagnóstico
+                      a target="blank" href="https://www.groupon.cl/deals/clinica-rident-blanqueamiento-dental-2-1"  
+                        span.rdnt-banner-promo-price $16.990
+            li.rdnt-banner-promo-slider-li
+              .rdnt-banner-promo
+                .rdnt-banner-photo-wrapper
+                  .rdnt-banner-photo
+                  article.rdnt-banner-promo-art
+                    h2.rdnt-banner-promo-h2 Nuevos clientes
+                    h1.rdnt-banner-promo-h1 Promoción niños
+                    .flex-row.center
+                      .rdnt-banner-promo-ul
+                        .rdnt-banner-promo-li Limpieza dental para niños con ultrasonido + profilaxis
+                        .rdnt-banner-promo-li  + IHO + diagnóstico + flúor + 2 sellantes
+                      a target="blank" href="https://www.groupon.cl/deals/clinica-rident-limpieza-dental-2-1"
+                        span.rdnt-banner-promo-price $13.490
+            
+      /! ESPECIALITIES
+      section.rdnt-especialities id="especialities"
+        h3.rdnt-h3
+          span Especialidades:
+          |  Cubrimos todas tus necesitades de salud y belleza dental
+        .flex-row.center
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-01.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Endodoncia
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Tratamiento para reparar y salvar un diente gravemente dañado o infectado en vez de quitarlo
+                button.rdn-especialities-button.especiality-1 type="button" Leer más
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-02.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Peridoncia
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Tratamiento de enfermedades periodontales como la Gingivitis y la Periodontitis a través de limpiezas...
+                button.rdn-especialities-button.especiality-2 type="button" Leer más
+
+        .flex-row.center
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-03.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Ortodoncia
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Estudiar, prevenir, diagnosticar, tratar y corregir las malformaciones, defectos y alteraciones en la dentadura...
+                button.rdn-especialities-button.especiality-3 type="button" Leer más
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-04.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Cirugía oral y maxilofacial
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Estudio, prevención, diagnóstico, tratamiento y rehabilitación de las enfermedades congénitas o...
+                button.rdn-especialities-button.especiality-4 type="button" Leer más
+
+        .flex-row.center
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-05.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Operatoria
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Prevenir, diagnosticar y curar enfermedades, restaurar lesiones o defectos que puede sufrir un diente...
+                button.rdn-especialities-button.especiality-5 type="button" Leer más
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-06.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Estética dental
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Proporcionar armonía y belleza a la sonrisa. Los tratamientos más comunes son las carillas dentales,, el blanquea...
+                button.rdn-especialities-button.especiality-6 type="button" Leer más
+        
+        .flex-row.center
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-07.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Rehabilitación Oral
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Recuperar su función masticatoria y salud bucal a través de prótesis removibles, fijas y coronas...
+                button.rdn-especialities-button.especiality-7 type="button" Leer más
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-08.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Odonto pediatría
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Cuidado oral preventivo y terapéutico de niños y adolescentes....
+                button.rdn-especialities-button.especiality-8 type="button" Leer más
+
+        .flex-row.center
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-09.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Implantología
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Tratamiento para reparar y salvar un diente gravemente dañado o infectado en vez de quitarlo...
+                button.rdn-especialities-button.especiality-9 type="button" Leer más
+          .rdnt-wrapper-especialities
+            article.rdnt-especialities-article
+              .rdnt-especialities-picture
+                img src="../../common/assets/img/especiality-10.png"
+              .flex-column.start
+                h2.rdnt-especialities-h2
+                  | Rejuvenecimiento Facial
+                  img src="../../common/assets/img/subline.svg"
+                p.rdnt-especialities-p Procedimientos para mejorar aspectos estéticos faciales, a través de técnicas como Botox, Ácido Hialurónico, Hilos...
+                button.rdn-especialities-button.especiality-10 Leer más
+
+      /! VENUES
+      section.rdnt-venues id="venues"
+        nav.rdnt-venues.display-none
+          ul.rdnt-venues-ul
+            li.rdnt-venues-li.active Puente Alto
+            li.rdnt-venues-li Salvador
+            li.rdnt-venues-li Tobalaba
+
+        .banner-venues-roll
+          img.rdnt-shape src="../../common/assets/img/shape.svg"
+          ul.banner-venues-ul
+            li.banner-venues-li.venues-banner-1
+              .flex-row.center
+                .rdnt-venue
+                  .flex-column.center
+                    h2.rdnt-venues-h2 Nuestras sedes
+                    h1.rdnt-venues-h1 Puente Alto
+                    .rdnt-venues-directinons-ul
+                      .rdnt-venues-directions-li
+                        span Dirección: 
+                        | Lorem ipsum #0123 - Pte. Alto
+                      .rdnt-venues-directions-li
+                        span Teléfono: 
+                        | 22 1223212 
+                        span  Celular: 
+                        | +56931938111
+                    .rdnt-venues-gallery
+                      .rdnt-venues-box-img.thumb-banner-img-1.active
+                        img src="../../common/assets/img/sedes/sede-0167.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-2
+                        img src="../../common/assets/img/sedes/sede-0064.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-3
+                        img src="../../common/assets/img/sedes/sede-0036.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-4
+                        img src="../../common/assets/img/sedes/sede-0106.jpg"
+                  .rdnt-wrapper-venues-gallery
+                    .rdnt-venue-banner-img.banner-img-1.active
+                    .rdnt-venue-banner-img.banner-img-2
+                    .rdnt-venue-banner-img.banner-img-3
+                    .rdnt-venue-banner-img.banner-img-4
+            li.banner-venues-li.venues-banner-2
+              .flex-row.center
+                .rdnt-venue
+                  .flex-column.center
+                    h2.rdnt-venues-h2 Nuestras sedes
+                    h1.rdnt-venues-h1 Salvador
+                    .rdnt-venues-directinons-ul
+                      .rdnt-venues-directions-li
+                        span Dirección: 
+                        | Lorem ipsum #0123 - Providencia
+                      .rdnt-venues-directions-li
+                        span Teléfono: 
+                        | 22 1223212 
+                        span  Celular: 
+                        | +56931938111
+                    .rdnt-venues-gallery
+                      .rdnt-venues-box-img.thumb-banner-img-1.active
+                        img src="../../common/assets/img/sedes/sede-0236.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-2 
+                        img src="../../common/assets/img/sedes/sede-0180.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-3
+                        img src="../../common/assets/img/sedes/sede-0215.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-4
+                        img src="../../common/assets/img/sedes/sede-0187.jpg"
+                  .rdnt-wrapper-venues-gallery
+                    .rdnt-venue-banner-img.banner-img-1.active
+                    .rdnt-venue-banner-img.banner-img-2
+                    .rdnt-venue-banner-img.banner-img-3
+                    .rdnt-venue-banner-img.banner-img-4
+            li.banner-venues-li.venues-banner-3
+              .flex-row.center
+                .rdnt-venue
+                  .flex-column.center
+                    h2.rdnt-venues-h2 Nuestras sedes
+                    h1.rdnt-venues-h1 Tobalaba
+                    .rdnt-venues-directinons-ul
+                      .rdnt-venues-directions-li
+                        span Dirección: 
+                        | Lorem ipsum #0123 - Providencia
+                      .rdnt-venues-directions-li
+                        span Teléfono: 
+                        | 22 1223212 
+                        span  Celular: 
+                        | +56931938111
+                    .rdnt-venues-gallery
+                      .rdnt-venues-box-img.thumb-banner-img-1.active
+                        img src="../../common/assets/img/sedes/sede-0293.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-2
+                        img src="../../common/assets/img/sedes/sede-0250.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-3
+                        img src="../../common/assets/img/sedes/sede-0262.jpg"
+                      .rdnt-venues-box-img.thumb-banner-img-4
+                        img src="../../common/assets/img/sedes/sede-0275.jpg"
+                  .rdnt-wrapper-venues-gallery
+                    .rdnt-venue-banner-img.banner-img-1.active
+                    .rdnt-venue-banner-img.banner-img-2
+                    .rdnt-venue-banner-img.banner-img-3
+                    .rdnt-venue-banner-img.banner-img-4
+
+      /! US
+      section.rdnt-us id="us"
+        .rdbt.in-works-advice
+        h3.rdnt-h3
+          span Nosotros: 
+          |  Conoce a las personas que te recibirán en Rident
+        .rdnt-us-banner-slider 
+          ul
+            li
+              /! EJEMPLO I
+              .rdnt-wrapper-us
+                .rdnt-slider-us
+                  .flex-row.between
+                    .flex-row.start
+                      .rdnt-us-picture
+                        img src="../../common/assets/img/doctora.png"
+                      .flex-col.start
+                        h2.rdnt-us-h2
+                          | Paula Pérez
+                          img src="../../common/assets/img/subline.svg"
+                        p.rdnt-us-p
+                          | Especializa en:
+                          br 
+                          | Una especialidad de ejemplo
+                          br
+                          br
+                          | Atiende en:
+                          br 
+                          | Sede Puente Alto
+                    p.rdnt-us-quote "...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etc..."
+            li
+              /! EJEMPLO II
+              .rdnt-wrapper-us
+                .rdnt-slider-us
+                  .flex-row.between
+                    .flex-row.start
+                      .rdnt-us-picture
+                        img src="../../common/assets/img/doctora.png"
+                      .flex-col.start
+                        h2.rdnt-us-h2
+                          | Paula Pérez
+                          img src="../../common/assets/img/subline.svg"
+                        p.rdnt-us-p
+                          | Especializa en:
+                          br 
+                          | Una especialidad de ejemplo
+                          br
+                          br
+                          | Atiende en:
+                          br 
+                          | Sede Puente Alto
+                    p.rdnt-us-quote "...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etc..."
+            
+      /! ENTERPRISE
+      section.rdnt-enterprise id="enterprise"
+        h3.rdnt-h3
+          | Convenios para empresas
+        ul.rdnt-enterprise-banner-ul
+          li.rdnt-enterprise-banner-li 
+            article.rdnt-enterprise-article
+              h3.rdnt-enterprise-h3 Más sonrisas para tus trabajadores
+              p.rdnt-enterprise-p 
+                | Invitamos a todas las empresas e ins tuciones a ser parte de nuestro Convenio Rident.
+                br
+                | Todas las personas y familiares directos asociadas a las ins tución o empresa adherida al convenio contaran con los siguientes beneficios:
+              .flex-row.start.enterprise-list
+                .flex-column
+                  ul 
+                    li 
+                      img src="../../common/assets/img/icon-li.svg" 
+                      | Presupuesto y diagnóstico inicial sin costo.
+                    li 
+                      img src="../../common/assets/img/icon-li.svg" 
+                      | Tratamientos integrales y atención en todas las prestaciones de la odontología.
+                    li 
+                      img src="../../common/assets/img/icon-li.svg"  
+                      | Arancel preferencial con grandes descuentos en cada una de las prestaciones.
+                    li
+                      img src="../../common/assets/img/icon-li.svg"
+                      | Promociones mensuales y participación en concursos de fidelización
+                .flex-column 
+                  ul 
+                    li 
+                      img src="../../common/assets/img/icon-li.svg" 
+                      | Servicio de emergencias sin recargos dentro del horario de atención.
+                    li 
+                      img src="../../common/assets/img/icon-li.svg" 
+                      | Formas de pago flexibles, con cuotas o según avance del tratamiento.
+                    li 
+                      img src="../../common/assets/img/icon-li.svg" 
+                      | Línea directa de consultas con nuestros especialistas.
+              a target="blank" href="../../common/assets/files/rident-empresas.pdf"
+                button.rdnt-enterprise-button type="button" Leer más
+              
+      
+      /! FOOTER
+      section.rdnt-footer id="footer"
+        img src="../../common/assets/img/logo-rident-2.svg"
+        nav.rdnt-footer-nav
+          a href="https://www.facebook.com/clinicarident/"
+            img src="../../common/assets/img/facebook.svg"
+            | fb.com/rident
+          a href="mailto:contacto@rident.cl"
+            img src="../../common/assets/img/mail.svg"
+            | contacto@rident.cl
+
+
+      .rdnt-modal-bg
+
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-1.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Endodoncia
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | La endodoncia también conocido como tratamiento de conducto, es la rama de la odontología que realiza el tratamiento para reparar y salvar un diente gravemente dañado o infectado en vez de quitarlo.
+            span.bold-block
+              | En que consiste el tratamiento:
+            p.rdnt-modal-p
+              | El procedimiento consiste en quitar el nervio del diente (la pulpa), posteriormente realizar una limpieza, desinfectando profundamente y sellar el conducto pulpar.
+              br
+              br
+              | Una vez realizado el tratamiento de conducto, es necesario restaurar el diente, dado que el tratamiento genera una cavidad que debe ser corregida, o también en muchos casos donde se realizan endodoncias, es debido a que el diente posee una fractura y debe repararse.
+              br
+              br
+              | La restauración del diente se puede realizar con diferente técnicas dependiendo del cada caso, para esto en Rident contamos con la especialidad de rehabilitación oral, donde el doctor especialista evalúa el tratamiento de restauración óptimo para cada caso, estos pueden ser coronas, incrustaciones u otro tratamiento.
+            span.bold-block Por que necesito un tratamiento de conducto:
+            p.rdnt-modal-p
+              | El tratamiento de conducto lo necesitas porque tienes una infección en el nervio de tu diente que ha ocasionado una inflamación y necrosis de la pulpa.
+              br
+              | La causa más frecuente de la infección, consecuente inflamación y necrosis de la pulpa, es la existencia de caries profundas, que no se trataron oportunamente. Sin embargo existen otros factores que pueden generar que requieras una endodoncia:
+            ul 
+              li Traumatismos que han roto o agrietado tu diente.
+              li El desgaste  constante y profundo de los dientes por el roce entre ellos.
+              li Otras lesiones o patologías.
+            span.bold-block Síntomas de un diente que requiere endondóncia.
+            p.rdnt-modal-p
+              | Algunos de los síntomas que presenta un paciente que debe ser sometido a una endodoncia son los siguientes:
+            ul 
+              li Dolor intermitente o constante y de diferentes intensidades.
+              li Sensibilidad al frío o al calor
+              li Molestia al masticar
+              li Cambio de color del diente a un tono más oscuro
+              li Aparición de un flemón o fístula
+            span.bold-quote
+              | “Una vez realizado el tratamiento  no sentirá más el dolor que sentía antes de la intervención”
+            span.bold-block Más información sobre el tratamiento.
+            p.rdnt-modal-p 
+              | Un tratamiento de endodoncia normalmente requiere 1 o 2 visitas a la consulta del dentista. En rident procuramos ser muy cuidadosos para minimizar todos los posibles dolores, por lo que el tratamiento dolerá muy poco o nada, gracias a la anestesia local aplicada por el especialista. 
+              br
+              | Una vez comenzada la atención el especialista:
+            ul 
+              li Tomará rayos X para obtener una vista clara de su diente o muela y del hueso circundante.
+              li Anestesiará la zona alrededor y también su diente o muela para que esté cómodo/a durante el tratamiento.
+              li Pondrá una hoja fina de goma látex sobre su diente o muela para mantenerlo seco, limpio y protegido de virus, bacterias y hongos que hay normalmente en la boca.
+            p.rdnt-modal-p 
+              | Durante el tratamiento, el especialista:
+            ul 
+              li Creará una apertura en la parte superior de su muela o diente.
+              li Sacará el nervio del interior del diente o muela y de las zonas de su raíz, conocidas como conductos radiculares.
+              li Limpiará dentro del diente o muela y de cada conducto radicular. Su dentista podría tratar el diente o la muela con medicina para matar los gérmenes.
+              li Rellenará los conductos radiculares con un material parecido a la goma para sellarlos contra futuras infecciones.
+              li Pondrá un relleno provisional en el diente o muela hasta la restauración definitiva, como un relleno permanente o una corona que será puesta a la primera oportunidad.
+            p.rdnt-modal-p 
+              | Después del tratamiento:
+            ul 
+              li Su diente o muela y la zona circundante podrían estar sensibles unos días. Por lo que el especialista recomendará analgésicos para aliviar las posibles molestias.
+              li Además, el dentista podría recetarle antibióticos. Úselos siguiendo las instrucciones, y haga seguimiento con su dentista si tiene algún problema al tomarlos.
+            p.rdnt-modal-p 
+              | Deberá concertar una visita de seguimiento tras el tratamiento endodóntico. En esta visita, su dentista retirará el relleno provisional y lo reemplazará con un relleno regular o una corona que proteja de mayor daño a su diente o muela. Un perno de metal o de plástico también podría ser puesto dentro del conducto radicular para asegurar que los materiales de relleno permanezcan en su sitio. Esto ayudará a sujetar la corona, si necesita una.
+
+
+
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-2.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Peridoncia
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | Pronto encontrarás información en detalle de esta especialidad...
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-3.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Ortodoncia
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | El objetivo de ortodoncia es volver a colocar los dientes de forma alineada y correcta para asegurar su funcionalidad y su estética. Los ortodoncistas son los odontólogos especializados en la corrección de la malposición de los dientes y en los problemas derivados de la mala oclusión o mordida.
+              br
+              | Cuando un paciente tiene los dientes apiñados o torcidos, además del problema estético que eso representa, le puede provocar problemas funcionales y  tener mas posibilidades de padecer caries, enfermedades periodontales, sarro, halitosis, gingivitis e inflamación de encías.
+              br
+              | Es importante destacar, que la mala colocación de los dientes puede ocasionar sobrecarga en los músculos con los que se mastica y en las articulaciones temporomandibulares, lo que normalmente se manifiesta en forma de dolores de cabeza, dolores al masticar y dolor de cuello.
+              br
+              | Para darnos cuenta de la importancia de la correcta posición de los dientes, podemos decir que el 90% de las pérdidas dentales a temprana edad, ocurren en dientes que están apiñados.
+              br
+              | Es por eso que en Rident tenemos excelentes promociones y tratamientos integrales para resolver todos los problemas de ortodoncia.
+              br
+              | Te indicamos que no hay una edad exacta para empezar la ortodoncia. Muchos piensan que la ortodoncia es exclusivamente para los niños, pero eso no es correcto, la ortodoncia puede realizarse a cualquier edad con excelentes resultados y en Rident tenemos cientos de excelentes resultados.
+            span.bold-block ¿Por qué ponerse brackets?
+            p.rdnt-modal-p 
+              | A continuación destacamos los principales problemas que podemos mejorar con el uso de ortodoncias:
+            ul
+              li Dientes torcidos o apiñados.
+              li Mordida abierta o cruzada.
+              li Mandíbula y/o dientes inferiores adelantados respecto al maxilar superior.
+              li Mandíbula y/o dientes inferiores retrasados respecto al maxilar superior.
+              li Separación entre los dientes, que en condiciones normales no deben existir.
+            p.rdnt-modal-p 
+              | Con el tratamiento de ortodoncia obtenemos beneficios estéticos y funcionales, entre los que podemos destacar:
+            ul
+              li Se evita el desgaste anormal de los dientes.
+              li Se evitan enfermedades que en el futuro pueden significar la pérdida de dientes.
+              li Se mejora la digestión de los alimentos.
+              li Evita la sobrecarga muscular.
+              li Elimina ciertos dolores de cabeza y de cuello.
+              li Facilita la higiene oral y la prevención de las caries.
+            span.bold-block En que consiste el tratamiento:
+            p.rdnt-modal-p
+              | Nuestros especialistas en ortodoncia analizarán la mejor solución para el paciente, estudiará la malposición o mala oclusión de los dientes, para ver cuál debe ser la posición final correcta y así proponer un plan de tratamiento con ortodoncias. Para este estudio, el odontólogo se apoyará de radiografías intraorales y panorámicas o de moldes de la boca del paciente.
+              br 
+              | Una vez decidida la mejor solución se elegirá la ortodoncia mas adecuada, que dependiendo de la edad, podrá ser:
+              br 
+              | - Para niños que están en la fase de dentición mixta, donde conviven dientes temporales de leche y definitivos, se suele utilizar ortodoncias removibles con el fin de dirigir adecuadamente el crecimiento de los maxilares que aún están en desarrollo.
+              br 
+              | - Para pacientes con dientes permanentes, las ortodoncias más comunes son:
+            ul
+              li Las fijas, con bandas y brackets, que se adhieren a los dientes mediante un cemento especial.
+              li Las modernas ortodoncias invisibles removibles, que pueden ser retiradas de la boca directamente por el paciente y que permiten quitárselas durante las comidas y para la higiene bucal.
+            span.bold-block Tipos de brackets
+            span.bold-quote Ortodoncias fijas con Brackets
+            p.rdnt-modal-p
+              | En Rident utilizamos a última tecnología en brackets, con la que las malposiciones de los dientes y las maloclusiones, se corrigen en mucho menos tiempo que con los brackets convencionales. Los beneficios de esta técnica es que se trata de una ortodoncia de baja fricción gracias al uso de brackets de última generación.
+              br
+              | Los brackets pueden ser metálicos o de cristal de zafiro, con lo que también se mejora mucho la estética respecto a los brackets de cerámica clásicos.
+
+
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-4.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Cirugía Oral Y Maxilofacial
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | Es el área de la odontología orientada al diagnóstico y tratamiento de las lesiones infecciosas, congénitas y  traumatismos que afectan al área facial y bucal. En Rident contamos con un grupo de dentistas orientados a la atención integral del paciente, con especialistas y equipos capacitados para el tratamiento de casos de alta complejidad. 
+            p.rdnt-modal-p 
+              span.bold Enfermedades y lesiones Oro-faciales: 
+              | A través de la cirugía oral y maxilofacial se tratan aquellos casos asociados a lesiones infecciosas, tumorales, congénitas, quísticas y traumáticas localizadas en el área de cabeza y cuello. 
+            p.rdnt-modal-p 
+              span.bold Cirugía ortognática: 
+              | En ocasiones no es suficiente el tratamiento de ortodoncia para la corrección de la mordida del paciente, siendo necesario la realización de la cirugía ortognática para mejorar la alineación dental y el perfil del paciente, cumpliendo con un requisito funcional y estético.
+            p.rdnt-modal-p 
+              span.bold Exodoncia de terceros molares: 
+              | En la actualidad se conoce la implicación que tienen la presencia de los terceros molares en lesiones de los tejidos blandos debido a la incapacidad a realizar una buena higiene por el aumento del volumen de la encía, generando dolor y mal aliento. También pueden lesionar a los dientes vecinos. De igual manera  son necesarias extraerlas para generar espacio cuando se realiza tratamiento ortodóntico.  
+            p.rdnt-modal-p 
+              span.bold Implantes dentales: 
+              | En los últimos años los implantes dentales se han convertido en la opción más efectiva para rehabilitar la pérdida dentaria. En ocasiones los niveles de hueso no son suficientes o el hueso remanente padece irregularidades, indicando que existe la necesidad de realizar un injerto óseo o la regularización del reborde óseo, garantizando un tratamiento exitoso, devolviendo al paciente la función masticatoria, fonación adecuada y estética dental.   
+
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-5.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Operatoria
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | Pronto encontrarás información en detalle de esta especialidad...
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-6.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Estética Dental
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | En los últimos años la demanda estética se acrecienta, exigiendo al área odontológica el desarrollo de nuevas técnicas y materiales para la realización de tratamientos dentales que cumplan con las expectativas del paciente, devolviendo y creando la armonía dental necesaria que pudo ser alterada por caries dental, traumatismo dental, alteraciones de color y forma  o alteraciones congénitas.
+            p.rdnt-modal-p 
+              span.bold Blanqueamiento dental: 
+              | Las encías con un color rosa coral y dientes blancos están asociados a un estado saludable. Con respecto a los dientes existe la opción terapéutica del blanqueamiento dental,  con el cual se logra mejorar el color del diente y obtener dientes hasta tres tonos más blancos, mejorando a su vez la estética y autoestima del paciente.
+            p.rdnt-modal-p 
+              span.bold Restauraciones estéticas: 
+              |  Cuando hay lesiones de caries ubicadas en el sector anterior de la boca o traumatismos que generen fracturas de la de la estructura dentaria, pueden ser restauradas a través  de restauraciones con composite,  devolviendo la forma y color adecuado.  De igual manera a través  de estas restauraciones se logra aumentar el tamaño, mejorar el color y cerrar espacios que generan inconformidad, de esta manera se logra mejorar la armonía dental y sonreír con total plenitud y confianza.
+            p.rdnt-modal-p 
+              span.bold Carillas directas: 
+              |  En la actualidad, es una de las mejores opciones para mejorar la estética dental, sin la necesidad de realizar algún tipo de desgaste sobre la estructura dentaria en la mayoría de los casos. Resolviendo problemas asociados a caries avanzadas, alteraciones de forma y color, dientes con microdoncia (alteración de tamaño),  desgaste de bordes incisales generadas por bruxismo, cierre de diastema (espacio entre dientes)
+            p.rdnt-modal-p 
+              span.bold Carillas indirectas o de porcelana: 
+              |  En ocasiones los defectos estructurares, alteraciones del color y forma, son tan avanzados que es necesario realizar un desgaste mínimo sobre la estructura dentaria para dar espacio y retención al material restaurador que corresponde a las carillas de porcelana, un material con una alta estética y de larga duración.  Alcanza resultados incomparables, generando los cambios estéticos esperados.
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-7.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Rehabilitación Oral
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | La rehabilitación oral es una especialidad de la Odontología que se encarga de restaurar y devolver la función estética y oral cuando se ha tenido la perdida de una o más piezas dentales. Esta especialidad devuelve la armonía oral por medio de prótesis dentales, siempre buscando una oclusión y función correcta.
+              br
+              | La rehabilitación oral en Rident es una especialidad que combina de forma integral las áreas de prótesis fija, prótesis removible, operatoria, oclusión e Implantes dentales, a su vez realizando el diagnóstico y plan de tratamiento ideal para cada paciente, que requiere recobrar su salud bucal a través de las técnicas más modernas de rehabilitación. Al mismo tiempo dicha especialidad, establece cercana relación con las demás áreas de la odontología, como periodoncia, endodoncia y ortodoncia.
+              br
+              | Esta especialidad es de suma importancia al momento de reconstruir tu sonrisa con nuestros doctores especialistas.
+            span.bold-block ¿Por que ir a un rehabilitador Oral? 
+            p.rdnt-modal-p 
+              | Si quieres mejorar la saluda de tu boca, en Rident te invitamos a tener una evaluación gratuita con nuestros especialistas para que evalúen de forma integral el plan de tratamiento perfecto para lograr salud bucal, y los resultados que tu esperas.
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-8.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Odonto Pediatría
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | La Odontopediatría es el área de la Odontología que se encarga de la prevención, diagnóstico, tratamiento y resolución de las afecciones bucodentales en pacientes niños, adolescentes y con necesidades especiales. 
+            span.bold-block En esta etapa se pueden prevenir de forma temprana patologías o alteraciones en los dientes, encías y en la mordida, para así corregirlas a tiempo.
+            p.rdnt-modal-p
+              | En esta etapa se pueden prevenir de forma temprana patologías o alteraciones en los dientes, encías y en la mordida, para así corregirlas a tiempo. 
+              br 
+              | La 
+              span.bold salud dental de los niños 
+              | es clave para el bienestar infantil y a diferencia de lo que se piensa, ésta debe empezar desde edades muy tempranas.
+              br 
+              | En Rident recomendados no esperar hasta que se presente un problema para llevar a nuestros hijos al dentista. Es importante realizar 
+              span.bold limpiezas dentales al menos una vez al año 
+              | y podemos aprovechar la visita a consulta para prevenir futuros problemas relacionados con la salud dental de nuestros hijos.
+              br
+              | Cada fase del crecimiento necesita unos 
+              span.bold cuidados específicos de higiene dental, 
+              | que se deben realizar adecuadamente para que nuestros hijos tengan una boca sana y evitar caries.
+              br 
+              | En Rident recomendamos empezar con 
+              span.bold cuidados sencillos desde que son bebés, 
+              | para prevenir problemas futuros. Antes de que aparezcan los primeros dientes, que puede ser a partir de los 4 meses hasta el año, se recomienda limpiar las encías con una gasa o paño húmedo o dar al bebé un biberón con agua por la noche después de la tomas de leche.
+              br
+              | Entre 
+              span.bold los 7 y los 12 meses 
+              | muchos bebés empiezan a experimentar la salida de los molares, a partir de ese momento se recomienda utilizar un cepillo dental suave adaptado a para esta edad y limpiar suavemente para no herir la encía. Si el bebé siente alguna molestia cuando empiezan a aparecer los primeros dientes se pueden utilizar mordedores fríos, para aliviar las molestias de las encías.
+              br 
+              span.bold A partir del año hasta los 2 años de edad,
+              |  recomendamos empezar a enseñar a los niños a utilizar el cepillo por su cuenta y emplear hilo dental una vez al día, cuando ya cuenten con varios dientes. Igualmente, en esta fase del desarrollo, se debe hacer una primera visita al dentista , es para eso que esperamos que cuentes con nosotros que cuidaremos de la salud de tu hijo con mucho profesionalismo y cuidado.
+            span.bold-block ¿Qué tratamientos sugerimos realizar a nuestros hijos?
+            p.rdnt-modal-p Dentro de los tratamientos que se realizan en Odontopediatría se encuentran: 
+            ul
+              li Higiene Dental: Profilaxis e Instrucciones de Limpieza.
+              li Prevención de Caries: Sellantes y Flúor.
+              li Tratamiento Pulpar: Pulpotomías y Pulpectomías. 
+              li Mantenedores de Espacio.
+              li	Estudio de anomalías dentales. 
+            p.rdnt-modal-p 
+              | En Rident además de los aspectos clínicos, nuestros odontopediatras también están especializados en tratar a los niños desde el punto de vista psicológico, cuentan con conocimientos necesarios para responder a preguntas de todo tipo, en un lenguaje lo más simple posible, convirtiendo así la consulta en una experiencia agradable para los niños y sus padres. 
+              br 
+              | Es importante visitar al odontopediatra lo más temprano posible, así se evita la existencia de afecciones y en caso de haberlas detectarlas al inicio, haciendo así que las sesiones sean cortas para los niños. 
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-9.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Implantología
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | Pronto encontrarás información en detalle de esta especialidad...
+      /! SPECIALITIES MODAL
+      .rdnt-wrapper-modal-especialities.modal-especialities-10.display-none
+        .rdnt-modal-especialities
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Rejuvenecimiento Facial
+          .rdnt-banner-modal-especialities
+          .rdnt-modal-text-body
+            p.rdnt-modal-p
+              | Pronto encontrarás información en detalle de esta especialidad...
+
+      /! VENUE SELECTION MODAL
+      .rdnt-wrapper-modal-venue.display-none
+        .rdnt-modal-venue
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Reserva en:
+          .flex-row
+              .flex-column
+                a href="https://www.reservo.cl/makereserva/selecttratamiento1/404/403/2/1/"
+                  h5.rdnt-h5.sede-1 Sede Tobalaba
+                  .rdnt-venue-img.venue-1
+              .flex-column
+                a href="https://www.reservo.cl/makereserva/selecttratamiento1/28/26/2/1/"
+                  h5.rdnt-h5.sede-2 Sede Salvador
+                  .rdnt-venue-img.venue-2
+              .flex-column
+                a href="https://www.reservo.cl/makereserva/selecttratamiento1/207/224/2/1/"
+                  h5.rdnt-h5.sede-3 Sede Pte. Alto
+                  .rdnt-venue-img.venue-3
+
+      /! VENUE TAKEN SELECTION MODAL
+      .rdnt-wrapper-modal-venue-taken.display-none
+        .rdnt-modal-venue
+          span.rdnt-close-modal
+            i.fas.fa-times
+          h3 Reservaste en:
+          .flex-row
+              .flex-column
+                a href="https://www.reservo.cl/makereserva/selecttratamiento1/404/403/2/1/"
+                  h5.rdnt-h5.sede-1 Sede Tobalaba
+                  .rdnt-venue-img.venue-1
+              .flex-column
+                a href="https://www.reservo.cl/makereserva/selecttratamiento1/28/26/2/1/"
+                  h5.rdnt-h5.sede-2 Sede Salvador
+                  .rdnt-venue-img.venue-2
+              .flex-column
+                a href="https://www.reservo.cl/makereserva/selecttratamiento1/207/224/2/1/"
+                  h5.rdnt-h5.sede-3 Sede Pte. Alto
+                  .rdnt-venue-img.venue-3
+
+      /! JAVASCRIPT FOR SMOOTH SCROLLLING EFFECT
+      javascript:
+        var scroll = new SmoothScroll('a[href*="#"]');
+      
+      /! JAVACRIPT FOR SLIDER
+      javascript:
+        jQuery(document).ready(function($) {
+          $('.rdnt-banner-home-slider').unslider();
+        });
+        var slider = $('.rdnt-banner-home-slider').unslider({ autoplay: true, delay: 5000, animation: 'fade' });
+        var sliderPromo = $('.rdnt-banner-promo-slider').unslider({ autoplay: true, delay: 5000, animation: 'horizontal' });
+        var sliderVenue = $('.banner-venues-roll').unslider({ autoplay: true, delay: 5000, animation: 'fade' });
+        var sliderUs = $('.rdnt-us-banner-slider').unslider({ autoplay: true, delay: 5000, animation: 'vertical' });
+
+      /! JAVASCRIPT FOR CHAT
+      javascript: 
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5a39bce7bbdfe97b137fc6ee/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+
+
+
+      
+
+      
